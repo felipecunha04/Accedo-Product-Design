@@ -1,29 +1,30 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
 import * as Styles from './styles';
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  startIcon?: JSX.Element;
+  leftIcon?: JSX.Element;
+  rightIcon?: JSX.Element;
   endIcon?: JSX.Element;
-  variant?: 'default' | 'text' | 'iconbutton';
+  variant?: 'default' | 'text' | 'iconButton';
 }
 
 export function Button({
   children,
-  startIcon,
-  endIcon,
+  leftIcon,
+  rightIcon,
   variant = 'default',
   ...props
 }: ButtonProps) {
   return (
     <Styles.Button variant={variant} {...props}>
-      {startIcon}
+      {leftIcon}
       
       <span>{children}</span>
 
-      {endIcon}
+      {rightIcon}
     </Styles.Button>
   );
 }

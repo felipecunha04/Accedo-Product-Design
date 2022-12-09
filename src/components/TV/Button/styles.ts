@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface IButton {
-  variant?: 'default' | 'text' | 'iconbutton';
+  variant?: 'default' | 'text' | 'iconButton';
 }
 
 export const Button = styled.button<IButton>`
@@ -12,7 +12,41 @@ export const Button = styled.button<IButton>`
   padding: ${({ theme }) => `${theme.spacing['2xs']} ${theme.spacing['xs']}`};
   gap: ${({ theme }) => theme.spacing.nano};
   color: ${({ theme }) => theme.pallete.neutral.white};
-  background-color: #3d4851;
+  ${({ variant, theme }) => {
+    switch(variant) {
+      case 'text':
+        return `
+          color: black;
+          padding: 0;
+          border-radius: 0;
+          background-color: white;
+          &:enabled {
+            cursor: pointer;
+        
+            &:hover,
+            &:focus {
+              background-color: white;
+            }
+          }
+        `
+      case 'iconButton':
+        return `
+          background-color: white;
+        `
+      default:
+        return `
+          background-color: #3d4851;
+          &:enabled {
+            cursor: pointer;
+        
+            &:hover,
+            &:focus {
+              background-color: ${theme.pallete.primary.medium};
+            }
+          }
+        `
+    }
+  }}
   border-radius: 1000px;
 
   font-family: ${({ theme }) => theme.font.family};
@@ -26,15 +60,6 @@ export const Button = styled.button<IButton>`
     fill: ${({ theme }) => theme.pallete.neutral.white};
     width: ${({ theme }) => theme.font.size[4]};
     height: ${({ theme }) => theme.font.size[4]};
-  }
-
-  &:enabled {
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-      background-color: ${({ theme }) => theme.pallete.primary.medium};
-    }
   }
 
   &:disabled {

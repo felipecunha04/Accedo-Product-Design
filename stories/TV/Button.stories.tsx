@@ -20,12 +20,12 @@ const meta: Meta = {
       control: { type: 'inline-radio' },
     },
     variant: {
-      options: ['default', 'text', 'iconbutton'],
+      options: ['default', 'text', 'iconButton'],
       description: 'Variant type of the Button Component',
       control: { type: 'select' },
     },
-    startIcon: {
-      description: 'Icon Element to be added in the start of the button',
+    LeftIcon: {
+      description: 'Icon Element to be added in the Left of the button',
     },
   },
   parameters: {
@@ -52,24 +52,69 @@ DefaultButton.args = {
   variant: 'default',
 };
 
-const StartIcon = (args: ButtonProps) => (
+const LeftIcon = (args: ButtonProps) => (
   <ThemeProvider theme={theme}>
     <Button {...args}>Click me</Button>
   </ThemeProvider>
 );
 
-export const StartIconButton = StartIcon.bind({});
+export const LeftIconButton = LeftIcon.bind({});
 
-StartIconButton.args = {
+LeftIconButton.args = {
   disabled: false,
   variant: 'default',
-  startIcon: <Icon />,
+  leftIcon: <Icon />,
 };
 
-StartIconButton.parameters = {
+LeftIconButton.parameters = {
   docs: {
     description: {
-      component: 'Button with a Start Icon',
+      component: 'Button with a Left Icon',
+    },
+  },
+};
+
+const RightIcon = (args: ButtonProps) => (
+  <ThemeProvider theme={theme}>
+    <Button {...args}>Click me</Button>
+  </ThemeProvider>
+);
+
+export const RightIconButton = RightIcon.bind({});
+
+RightIconButton.args = {
+  disabled: false,
+  variant: 'default',
+  rightIcon: <Icon />,
+};
+
+RightIconButton.parameters = {
+  docs: {
+    description: {
+      component: 'Button with a Right Icon',
+    },
+  },
+};
+
+const LeftAndRightIcon = (args: ButtonProps) => (
+  <ThemeProvider theme={theme}>
+    <Button {...args}>Click me</Button>
+  </ThemeProvider>
+);
+
+export const LeftAndRightIconButton = LeftAndRightIcon.bind({});
+
+LeftAndRightIconButton.args = {
+  disabled: false,
+  variant: 'default',
+  leftIcon: <Icon />,
+  rightIcon: <Icon />,
+};
+
+LeftAndRightIconButton.parameters = {
+  docs: {
+    description: {
+      component: 'Button with Left and Right Icons',
     },
   },
 };
