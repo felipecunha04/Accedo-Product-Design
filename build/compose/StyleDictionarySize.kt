@@ -1,7 +1,7 @@
 
 
 // Do not edit directly
-// Generated on Mon, 12 Dec 2022 14:01:26 GMT
+// Generated on Tue, 13 Dec 2022 13:41:30 GMT
 
 
 
@@ -12,12 +12,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.*
 
 object StyleDictionarySize {
-  /** the base size of the font */
-  val sizeFontBase = 16.00.sp
-  /** the large size of the font */
-  val sizeFontLarge = 32.00.sp
-  /** the medium size of the font */
-  val sizeFontMedium = 16.00.sp
-  /** the small size of the font */
-  val sizeFontSmall = 12.00.sp
+  val sizeDefault = 128.00.dp
+  val sizeIcon2xl = 768.00.sp
+  val sizeIconLarge = 512.00.sp
+  val sizeIconMedium = 384.00.sp
+  val sizeIconSmall = 256.00.sp
+  val sizeIconXl = 640.00.sp
 }

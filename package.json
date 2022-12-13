@@ -74,6 +74,7 @@
   "dependencies": {
     "@fontsource/metropolis": "^4.5.3",
     "styled-components": "^5.3.6",
+    "token-transformer": "0.0.28",
     "yarn": "^1.22.19"
   }
 }
