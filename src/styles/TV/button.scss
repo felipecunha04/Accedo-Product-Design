@@ -1,0 +1,23 @@
+.sassButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: #{$spacing-2xs}px #{$spacing-xs}px;
+  gap: #{$spacing-nano}px;
+  color: $color-neutral-white;
+  background-color: $color-bg-tv-button-enabled;
+  border-radius: #{$border-radius-pill}px;
+  font-family: $font-family-brand;
+  font-weight: $font-weight-regular;
+  line-height: $font-line-height-tight;
+
+  &:enabled {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $color-primary-medium;
+    }
+  }
+}

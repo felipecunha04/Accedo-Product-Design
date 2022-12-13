@@ -1,13 +1,30 @@
 import React, {HTMLAttributes, ReactNode} from 'react'
 
-export interface Props extends HTMLAttributes<HTMLButtonElement> {
-  children: ReactNode;
+import '../../styles/index.scss';
 
-  variant: 'primary' | 'secondary';
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  children: ReactNode;
+  leftIcon?: JSX.Element;
+  rightIcon?: JSX.Element;
+  endIcon?: JSX.Element;
+  variant?: 'default' | 'text' | 'iconButton';
 }
 
-export const Button = ({children, ...props}: Props) => {
+export function Button({
+  children,
+  leftIcon,
+  rightIcon,
+  variant = 'default',
+  ...props
+}: ButtonProps) {
   return (
-    <button {...props}>{children}</button>
-  )
+    <button className='sassButton' {...props}>
+      {leftIcon}
+      
+      <span>{children}</span>
+
+      {rightIcon}
+    </button>
+  );
 }
