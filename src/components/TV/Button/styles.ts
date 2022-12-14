@@ -9,7 +9,7 @@ export const Button = styled.button<IButton>`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: ${({ theme }) => `${theme.spacing['2xs']} ${theme.spacing['xs']}`};
+  padding: ${({ theme }) => `${theme.spacing['2xs']}px ${theme.spacing['xs']}`};
   gap: ${({ theme }) => theme.spacing.nano};
   color: ${({ theme }) => theme.pallete.neutral.white};
   ${({ variant, theme }) => {

@@ -1,6 +1,4 @@
-import React, {HTMLAttributes, ReactNode} from 'react'
-
-import '../../styles/index.scss';
+import React, {ReactNode} from 'react'
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -19,7 +17,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   return (
-    <button className='sassButton' {...props}>
+    <button {...props}>
       {leftIcon}
       
       <span>{children}</span>

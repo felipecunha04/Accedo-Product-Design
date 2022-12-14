@@ -20,7 +20,7 @@
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "token": "style-dictionary build"
+    "token": "node build.js"
   },
   "peerDependencies": {
     "react": ">=16"

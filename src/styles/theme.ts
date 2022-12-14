@@ -1,9 +1,11 @@
 import { DefaultTheme } from 'styled-components';
 import '@fontsource/metropolis';
+// @ts-ignore
+import * as Token from './tokens.js';
 
 const font = {
   family: {
-    brand: 'Metropolis',
+    brand: Token.FontFamilyBrand,
     android: 'Roboto',
     ios: 'SF Pro',
   },
@@ -54,7 +56,7 @@ const spacing = {
   quarck: '4px',
   nano: '8px',
   '3xs': '12px',
-  '2xs': '16px',
+  '2xs': Token.Spacing2xs,
   xs: '24px',
   sm: '40px',
   md: '56px',
