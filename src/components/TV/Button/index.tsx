@@ -1,4 +1,6 @@
-import React, {ReactNode} from 'react'
+import React, { ReactNode } from 'react';
+
+import * as Styles from './styles';
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -17,12 +19,12 @@ export function Button({
   ...props
 }: ButtonProps) {
   return (
-    <button {...props}>
+    <Styles.Button variant={variant} {...props}>
       {leftIcon}
       
       <span>{children}</span>
 
       {rightIcon}
-    </button>
+    </Styles.Button>
   );
 }
