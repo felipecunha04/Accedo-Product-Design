@@ -37,6 +37,35 @@ declare module 'styled-components' {
         '15': string;
       };
     };
+    pallete: {
+      neutral: {
+        [otherOptions: string]: unknown
+      };
+      primary: {
+        [otherOptions: string]: unknown
+      };
+      ovGradient: {
+        [otherOptions: string]: unknown
+      };
+      fb: {
+        [otherOptions: string]: unknown
+      };
+      dusky: {
+        [otherOptions: string]: unknown
+      };
+      bg: {
+        [otherOptions: string]: unknown
+      };
+      text: {
+        [otherOptions: string]: unknown
+      };
+      border: {
+        [otherOptions: string]: unknown
+      };
+      accent: {
+        [otherOptions: string]: unknown
+      };
+    };
     spacing: {
       quarck: string;
       nano: string;
@@ -52,22 +81,10 @@ declare module 'styled-components' {
       '4xl': string;
       '5xl': string;
     };
-    pallete: {
-      neutral: {
-        black: string;
-        'grey-10': string;
-        'grey-30': string;
-        'grey-60': string;
-        'grey-80': string;
-        white: string;
-      };
-      primary: {
-        darkest: string;
-        dark: string;
-        medium: string;
-        light: string;
-        lightest: string;
-      };
-    };
+    shadow: {};
+    borderRadius: {};
+    borderWidth: {};
+    opacity: {};
+    iconSize: {};
   }
 }
