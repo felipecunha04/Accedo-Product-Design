@@ -1,9 +1,14 @@
-# Basic Style Dictionary
+# Accedo Design System
 
-This example code is bare-bones to show you what this framework can do. If you have the style-dictionary module installed globally, you can `cd` into this directory and run:
+First of all, install all the dependencies by running the following command:
 ```bash
-style-dictionary build
+npm i
 ```
+Then just run this command and the Storybook should open on your browser:
+```bash
+npm run dev
+```
+
 
 You should see something like this output:
 ```
