@@ -1,15 +1,11 @@
 /**
  * Do not edit directly
- * Generated on Wed, 14 Dec 2022 10:47:22 GMT
+ * Generated on Mon, 19 Dec 2022 13:25:53 GMT
  */
 
 export const ColorOvGradientDefault = "#000000";
 export const ColorOvGradientHeroBanner = "#000000";
 export const ColorOvGradientPlayer = "#000000";
-export const ColorOvGradient23Featured = "#000000";
-export const ColorOvGradient23 = "#000000";
-export const ColorOvGradient169Featured = "#000000";
-export const ColorOvGradient169 = "#000000";
 export const ColorPrimaryDarkest = "#051b2e";
 export const ColorPrimaryDark = "#0a6cc2";
 export const ColorPrimaryMedium = "#3c92dd";

@@ -20,7 +20,9 @@
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "token": "node build.js"
+    "token-translate": "node build.js",
+    "token-transform": "npx token-transformer ./originaltokens.json ./tokens/tokens.json",
+    "dev": "npm run token-transform && npm run token-translate && concurrently --kill-others \"npm run start\" \"npm run storybook\""
   },
   "peerDependencies": {
     "react": ">=16"
@@ -62,6 +64,7 @@
     "@types/react-dom": "^18.0.9",
     "@types/styled-components": "^5.1.26",
     "babel-loader": "^9.1.0",
+    "concurrently": "^7.6.0",
     "css-loader": "^5.2.6",
     "husky": "^8.0.2",
     "react": "^18.2.0",
@@ -71,6 +74,7 @@
     "size-limit": "^8.1.0",
     "style-dictionary": "^3.7.1",
     "style-loader": "^2.0.0",
+    "token-transformer": "0.0.28",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.1",
     "typescript": "^4.9.3"
@@ -80,7 +84,6 @@
     "node-sass": "^8.0.0",
     "sass": "^1.56.2",
     "styled-components": "^5.3.6",
-    "token-transformer": "0.0.28",
     "yarn": "^1.22.19"
   }
 }
