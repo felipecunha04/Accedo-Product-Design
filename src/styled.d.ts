@@ -13,7 +13,7 @@ declare module 'styled-components' {
         android: string;
         ios: string;
       };
-      'line-height': {
+      lineHeight: {
         tight: string;
         regular: string;
         distant: string;
@@ -81,10 +81,47 @@ declare module 'styled-components' {
       '4xl': string;
       '5xl': string;
     };
-    shadow: {};
-    borderRadius: {};
-    borderWidth: {};
-    opacity: {};
-    iconSize: {};
+    shadow: {
+      none: string;
+      high: string;
+      medium: string;
+      low: string;
+    };
+    borderRadius: {
+      none: string;
+      small: string;
+      medium: string;
+      large: string;
+      circle: string;
+      pill: string;
+      button: string;
+      card: string;
+      input: string;
+      avatar: string;
+    };
+    borderWidth: {
+      none: string;
+      thin: string;
+      thick: string;
+      heavy: string;
+      outlinedButton: string;
+      tvCard: string;
+      tvAvatar: string;
+    };
+    opacity: {
+      full: string;
+      intense: string;
+      medium: string;
+      light: string;
+      transparent: string;
+    };
+    iconSize: {
+      default: string;
+      small: string;
+      medium: string;
+      large: string;
+      xl: string;
+      '2xl': string;
+    };
   }
 }

@@ -4,7 +4,7 @@ import * as Styles from './styles';
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode;
+  children: ReactNode | string;
   leftIcon?: JSX.Element;
   rightIcon?: JSX.Element;
   endIcon?: JSX.Element;

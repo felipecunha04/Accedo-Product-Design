@@ -62,7 +62,7 @@ export const LeftIconButton = LeftIcon.bind({});
 
 LeftIconButton.args = {
   disabled: false,
-  variant: 'default',
+  variant: 'iconButton',
   leftIcon: <Icon />,
 };
 
@@ -84,7 +84,7 @@ export const RightIconButton = RightIcon.bind({});
 
 RightIconButton.args = {
   disabled: false,
-  variant: 'default',
+  variant: 'iconButton',
   rightIcon: <Icon />,
 };
 
@@ -106,7 +106,7 @@ export const LeftAndRightIconButton = LeftAndRightIcon.bind({});
 
 LeftAndRightIconButton.args = {
   disabled: false,
-  variant: 'default',
+  variant: 'iconButton',
   leftIcon: <Icon />,
   rightIcon: <Icon />,
 };
