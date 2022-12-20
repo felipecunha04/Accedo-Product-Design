@@ -39,31 +39,31 @@ declare module 'styled-components' {
     };
     pallete: {
       neutral: {
-        [otherOptions: string]: unknown
+        [otherOptions: string]: string;
       };
       primary: {
-        [otherOptions: string]: unknown
+        [otherOptions: string]: string;
       };
       ovGradient: {
-        [otherOptions: string]: unknown
+        [otherOptions: string]: string;
       };
       fb: {
-        [otherOptions: string]: unknown
+        [otherOptions: string]: string;
       };
       dusky: {
-        [otherOptions: string]: unknown
+        [otherOptions: string]: string;
       };
       bg: {
-        [otherOptions: string]: unknown
+        [otherOptions: string]: string;
       };
       text: {
-        [otherOptions: string]: unknown
+        [otherOptions: string]: string;
       };
       border: {
-        [otherOptions: string]: unknown
+        [otherOptions: string]: string;
       };
       accent: {
-        [otherOptions: string]: unknown
+        [otherOptions: string]: string;
       };
     };
     spacing: {

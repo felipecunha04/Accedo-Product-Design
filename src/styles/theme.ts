@@ -1,7 +1,7 @@
 import { DefaultTheme } from 'styled-components';
 import '@fontsource/metropolis';
-// @ts-ignore
-import * as Token from './tokens.js';
+
+const Token = require('./tokens.js');
 
 const font = {
   family: {
@@ -36,7 +36,7 @@ const font = {
     regular: Token.FontWeightRegular,
     medium: Token.FontWeightMedium,
     bold: Token.FontWeightBold,
-  }
+  },
 };
 
 const pallete = {
@@ -124,7 +124,7 @@ const pallete = {
     Grey60: Token.ColorNeutralGrey60,
     Grey80: Token.ColorNeutralGrey80,
     White: Token.ColorNeutralWhite,
-  }
+  },
 };
 
 const shadow = {
@@ -161,7 +161,7 @@ const borderRadius = {
   card: `${Token.BorderRadiusCard}px`,
   input: `${Token.BorderRadiusInput}px`,
   avatar: `${Token.BorderRadiusAvatar}px`,
-}
+};
 
 const borderWidth = {
   none: Token.BorderWidthNone,
@@ -171,7 +171,7 @@ const borderWidth = {
   outlinedButton: Token.BorderWidthButtonOutlinedDefault,
   tvCard: Token.BorderWidthTvCard,
   tvAvatar: Token.BorderWidthTvAvatar,
-}
+};
 
 const opacity = {
   full: Token.OpacityFull,
@@ -179,7 +179,7 @@ const opacity = {
   medium: Token.OpacityMedium,
   light: Token.OpacityLight,
   transparent: Token.OpacityTransparent,
-}
+};
 
 const iconSize = {
   default: Token.SizeDefault,
@@ -188,7 +188,7 @@ const iconSize = {
   large: Token.SizeIconLarge,
   xl: Token.SizeIconXl,
   '2xl': Token.SizeIcon2xl,
-}
+};
 
 export const theme: DefaultTheme = {
   font,
@@ -198,5 +198,5 @@ export const theme: DefaultTheme = {
   borderWidth,
   opacity,
   iconSize,
-  shadow
+  shadow,
 };

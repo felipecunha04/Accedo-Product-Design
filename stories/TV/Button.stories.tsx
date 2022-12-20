@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { Button, ButtonProps } from '../../src/components/TV/Button';
 import { theme } from '../../src/styles/theme';
 
-const Icon = () => (
+const PlusIcon = (
   <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24">
     <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
   </svg>
@@ -24,8 +24,19 @@ const meta: Meta = {
       description: 'Variant type of the Button Component',
       control: { type: 'select' },
     },
-    LeftIcon: {
-      description: 'Icon Element to be added in the Left of the button',
+    rightIcon: {
+      options: ['PlusIcon', 'none'],
+      mapping: {
+        PlusIcon: PlusIcon,
+        none: <></>,
+      },
+    },
+    leftIcon: {
+      options: ['PlusIcon', 'none'],
+      mapping: {
+        PlusIcon: PlusIcon,
+        none: <></>,
+      },
     },
   },
   parameters: {
@@ -41,7 +52,9 @@ export default meta;
 
 const Default = (args: ButtonProps) => (
   <ThemeProvider theme={theme}>
-    <Button {...args}>Click me</Button>
+    <Button {...args}>
+      {args.variant === 'iconButton' ? PlusIcon : 'Click me'}
+    </Button>
   </ThemeProvider>
 );
 
@@ -50,71 +63,24 @@ export const DefaultButton = Default.bind({});
 DefaultButton.args = {
   disabled: false,
   variant: 'default',
+  leftIcon: 'PlusIcon',
+  rightIcon: 'PlusIcon',
 };
 
-const LeftIcon = (args: ButtonProps) => (
-  <ThemeProvider theme={theme}>
-    <Button {...args}>Click me</Button>
-  </ThemeProvider>
-);
+export const TextButton = DefaultButton.bind({});
 
-export const LeftIconButton = LeftIcon.bind({});
+TextButton.args = {
+  disabled: false,
+  variant: 'text',
+  leftIcon: 'PlusIcon',
+  rightIcon: 'PlusIcon',
+};
 
-LeftIconButton.args = {
+export const IconButton = DefaultButton.bind({});
+
+IconButton.args = {
   disabled: false,
   variant: 'iconButton',
-  leftIcon: <Icon />,
-};
-
-LeftIconButton.parameters = {
-  docs: {
-    description: {
-      component: 'Button with a Left Icon',
-    },
-  },
-};
-
-const RightIcon = (args: ButtonProps) => (
-  <ThemeProvider theme={theme}>
-    <Button {...args}>Click me</Button>
-  </ThemeProvider>
-);
-
-export const RightIconButton = RightIcon.bind({});
-
-RightIconButton.args = {
-  disabled: false,
-  variant: 'iconButton',
-  rightIcon: <Icon />,
-};
-
-RightIconButton.parameters = {
-  docs: {
-    description: {
-      component: 'Button with a Right Icon',
-    },
-  },
-};
-
-const LeftAndRightIcon = (args: ButtonProps) => (
-  <ThemeProvider theme={theme}>
-    <Button {...args}>Click me</Button>
-  </ThemeProvider>
-);
-
-export const LeftAndRightIconButton = LeftAndRightIcon.bind({});
-
-LeftAndRightIconButton.args = {
-  disabled: false,
-  variant: 'iconButton',
-  leftIcon: <Icon />,
-  rightIcon: <Icon />,
-};
-
-LeftAndRightIconButton.parameters = {
-  docs: {
-    description: {
-      component: 'Button with Left and Right Icons',
-    },
-  },
+  leftIcon: 'none',
+  rightIcon: 'none',
 };

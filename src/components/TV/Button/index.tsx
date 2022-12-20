@@ -7,7 +7,6 @@ export interface ButtonProps
   children: ReactNode | string;
   leftIcon?: JSX.Element;
   rightIcon?: JSX.Element;
-  endIcon?: JSX.Element;
   variant?: 'default' | 'text' | 'iconButton';
 }
 
@@ -20,11 +19,11 @@ export function Button({
 }: ButtonProps) {
   return (
     <Styles.Button variant={variant} {...props}>
-      {leftIcon}
-      
-      <span>{children}</span>
+      {variant !== 'iconButton' && leftIcon}
 
-      {rightIcon}
+      {children}
+
+      {variant !== 'iconButton' && rightIcon}
     </Styles.Button>
   );
 }
