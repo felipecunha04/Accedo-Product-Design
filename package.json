@@ -83,6 +83,7 @@
     "@fontsource/metropolis": "^4.5.3",
     "node-sass": "^8.0.0",
     "sass": "^1.56.2",
+    "storybook-dark-mode": "^2.0.4",
     "styled-components": "^5.3.6",
     "yarn": "^1.22.19"
   }

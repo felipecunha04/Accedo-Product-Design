@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 type IButton = {
   variant: string;
-}
+};
 
 export const Button = styled.button<IButton>`
   display: flex;
@@ -11,71 +11,64 @@ export const Button = styled.button<IButton>`
   justify-content: space-around;
   padding: ${({ theme }) => `${theme.spacing['2xs']} ${theme.spacing['xs']}`};
   gap: ${({ theme }) => theme.spacing.nano};
-  color: ${({ theme }) => theme.pallete.neutral.White};
-  ${({ variant, theme }) => {
-    switch(variant) {
-      case 'text':
-        return `
-          color: black;
-          padding: 0;
-          border-radius: ${theme.borderRadius.none};
-          background-color: ${theme.pallete.neutral.White};
-          &:enabled {
-            cursor: pointer;
-        
-            &:hover,
-            &:focus {
-              background-color: ${theme.pallete.neutral.White};
-            }
-          }
-        `
-      case 'iconButton':
-        return `
-          background-color: rgba(255, 255, 255, 0.15);
-          &:enabled {
-            cursor: pointer;
-        
-            &:hover,
-            &:focus {
-              background-color: ${theme.pallete.primary.Medium};
-            }
-          }
-        `
-      default:
-        return `
-          background-color: rgba(255, 255, 255, 0.15);
-          &:enabled {
-            cursor: pointer;
-        
-            &:hover,
-            &:focus {
-              background-color: ${theme.pallete.primary.Medium};
-            }
-          }
-        `
-    }
-  }}
   border-radius: ${({ theme }) => theme.borderRadius.pill};
+  min-height: 64px;
+  outline: 0;
+  border: ${({ theme }) => theme.borderWidth.none};
+  color: ${({ theme }) => theme.pallete.neutral.White};
+  background-color: rgba(255, 255, 255, 0.15);
 
   font-family: ${({ theme }) => theme.font.family.brand};
   font-weight: 700;
   line-height: ${({ theme }) => theme.font.lineHeight.tight};
-
-  outline: 0;
-  border: ${({ theme }) => theme.borderWidth.none};
+  font-size: ${({ theme }) => theme.font.size[5]};
 
   svg {
     fill: ${({ theme }) => theme.pallete.neutral.White};
-    width: ${({ theme }) => theme.font.size[4]};
-    height: ${({ theme }) => theme.font.size[4]};
+    width: ${({ theme }) => theme.font.size[7]};
+    height: ${({ theme }) => theme.font.size[7]};
+  }
+
+  &:enabled {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: ${({ theme }) => theme.pallete.primary.Medium};
+      box-shadow: 0px 30px 35px rgba(0, 0, 0, 0.3);
+    }
   }
 
   &:disabled {
-    background-color: ${({ theme }) => theme.pallete.neutral.Grey30};
     color: ${({ theme }) => theme.pallete.neutral.Grey60};
 
     svg {
       fill: ${({ theme }) => theme.pallete.neutral.Grey60};
     }
   }
+
+  ${({ variant, theme }) => {
+    switch (variant) {
+      case 'text':
+        return `
+         background-color: transparent;
+         &:enabled {
+           &:hover,
+           &:focus {
+             box-shadow: none;
+           }
+         }
+       `;
+      case 'iconButton':
+        return `
+        padding: ${theme.spacing['2xs']};
+       `;
+      default:
+        return `
+         &:disabled {
+           background-color: ${theme.pallete.neutral.Grey30};
+         }
+       `;
+    }
+  }}
 `;
