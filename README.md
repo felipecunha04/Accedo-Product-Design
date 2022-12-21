@@ -11,3 +11,6 @@ npm run dev
 
 This is a soon to be released library which currently has reausable TV components.
 After running the command above, the css is generated in a JavaScript file (src/styles/tokens.js) which is then used as basis for the styles across the application, but also many other styles are generated (build folder) inluding android, compose, ios, ios-swift and scss. These can be used in other applications to build new reusable components for other projects, languages and frameworks.
+
+POC TODO: Finish Home Page Components, Publish NPM Package, Publish StoryBook.
+TODO: Test Components, Build Mobile Components.
