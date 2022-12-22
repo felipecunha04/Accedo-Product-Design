@@ -1,29 +1,26 @@
 import React, { ReactNode } from 'react';
 
 import * as Styles from './styles';
-
 export interface AvatarProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode | string;
-  leftIcon?: JSX.Element;
-  rightIcon?: JSX.Element;
-  variant?: 'default' | 'text' | 'iconButton';
+  borderHighlight?: Boolean;
+  backgroundColor?: 'primary' | 'secondary';
+  variant?: 'default' | 'text' | 'icon';
+  size?: 'default' | 'small' | 'big';
 }
 
 export function Avatar({
   children,
-  leftIcon,
-  rightIcon,
+  borderHighlight = true,
+  backgroundColor = 'primary',
   variant = 'default',
+  size = 'default',
   ...props
 }: AvatarProps) {
   return (
-    <Styles.Avatar variant={variant} {...props}>
-      {variant !== 'iconButton' && leftIcon}
-
+    <Styles.Avatar avatarImage={children} borderHighlight={borderHighlight} backgroundColor={backgroundColor} size={size} variant={variant} {...props}>
       {children}
-
-      {variant !== 'iconButton' && rightIcon}
     </Styles.Avatar>
   );
 }

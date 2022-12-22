@@ -61,7 +61,7 @@ export const Button = styled.button<IButton>`
        `;
       case 'iconButton':
         return `
-        padding: ${theme.spacing['2xs']};
+         padding: ${theme.spacing['2xs']};
        `;
       default:
         return `
