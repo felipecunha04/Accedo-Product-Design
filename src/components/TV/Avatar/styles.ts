@@ -12,11 +12,15 @@ export const Avatar = styled.div<IAvatar>`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
-  border-radius: 1000px;
+  border-radius: ${({ theme }) => theme.borderRadius.circle};
   background: rgba(255, 255, 255, 0.15);
+  font-family: ${({ theme }) => theme.font.family.brand};
+  font-style: normal;
+  font-weight: ${({ theme }) => theme.font.weight.regular};
+  line-height: ${({ theme }) => theme.font.lineHeight.distant};
+  color: ${({ theme }) => theme.pallete.neutral.White};
 
-  ${({ avatarImage, variant }) => {
+  ${({ variant }) => {
     switch (variant) {
       case 'text':
         return `
@@ -26,7 +30,10 @@ export const Avatar = styled.div<IAvatar>`
        `;
       case 'icon':
         return `
-          background: url(${avatarImage}) !important;
+          img {
+            max-height: 100%;
+            max-width: 100%;
+          }
           svg {
             display: none;
           }
@@ -38,10 +45,7 @@ export const Avatar = styled.div<IAvatar>`
     }
   }};
 
-  background: #3C92DD;
-  box-shadow: 0px 50px 35px rgba(0, 0, 0, 0.5);
-
-  ${({ backgroundColor }) => {
+  ${({ backgroundColor, theme }) => {
     switch (backgroundColor) {
       case 'secondary':
         return `
@@ -49,43 +53,46 @@ export const Avatar = styled.div<IAvatar>`
        `;
       default:
         return `
-          background: #3C92DD;
-          box-shadow: 0px 50px 35px rgba(0, 0, 0, 0.5);
+          background: ${theme.pallete.primary.Medium};
+          box-shadow: ${theme.shadow.high};
          }
        `;
     }
   }};
 
-  ${({ borderHighlight }) => {
+  ${({ borderHighlight, theme }) => {
     switch (borderHighlight) {
       case false:
         return `
-          border: 0px solid #3C92DD;
+          border: ${theme.borderWidth.none} solid ${theme.pallete.primary.Medium};
        `;
       default:
         return `
-          border: 4px solid #3C92DD;
+          border: ${theme.borderWidth.tvAvatar} solid ${theme.pallete.primary.Medium};
          }
        `;
     }
   }};
 
-  ${({ size }) => {
+  ${({ size, theme }) => {
     switch (size) {
       case 'small':
         return `
           width: 64px;
           height: 64px;
+          font-size: ${theme.font.size['8']};
        `;
       case 'big':
         return `
           width: 264px;
           height: 264px;
+          font-size: ${theme.font.size['15']};
        `;
       default:
         return `
           width: 120px;
           height: 120px;
+          font-size: ${theme.font.size['11']};
          }
        `;
     }

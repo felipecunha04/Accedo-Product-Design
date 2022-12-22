@@ -54,8 +54,8 @@ export default meta;
 
 const Default = (args: AvatarProps) => (
   <ThemeProvider theme={theme}>
-    <Avatar {...args}>
-      {args.variant === 'text' && 'A' || args.variant === 'default' && AvatarIcon || AvatarImage}
+    <Avatar {...args} avatarImage={AvatarImage}>
+      {args.variant === 'text' && 'A' || args.variant === 'default' && AvatarIcon}
     </Avatar>
   </ThemeProvider>
 );

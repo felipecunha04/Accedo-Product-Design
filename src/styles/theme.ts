@@ -102,7 +102,7 @@ const pallete = {
     OnInverseSubtle: Token.ColorTextOnInverseSubtle,
     OnInverseDisabled: Token.ColorTextOnInverseDisabled,
   },
-  border: {
+  borderColor: {
     Default: Token.ColorBorderDefault,
     Alt: Token.ColorBorderAlt,
     Subtle: Token.ColorBorderSubtle,
@@ -164,13 +164,13 @@ const borderRadius = {
 };
 
 const borderWidth = {
-  none: Token.BorderWidthNone,
-  thin: Token.BorderWidthThin,
-  thick: Token.BorderWidthThick,
-  heavy: Token.BorderWidthHeavy,
-  outlinedButton: Token.BorderWidthButtonOutlinedDefault,
-  tvCard: Token.BorderWidthTvCard,
-  tvAvatar: Token.BorderWidthTvAvatar,
+  none: `${Token.BorderWidthNone}px`,
+  thin: `${Token.BorderWidthThin}px`,
+  thick: `${Token.BorderWidthThick}px`,
+  heavy: `${Token.BorderWidthHeavy}px`,
+  outlinedButton: `${Token.BorderWidthButtonOutlinedDefault}px`,
+  tvCard: `${Token.BorderWidthTvCard}px`,
+  tvAvatar: `${Token.BorderWidthTvAvatar}px`,
 };
 
 const opacity = {

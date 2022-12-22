@@ -8,10 +8,12 @@ export interface AvatarProps
   backgroundColor?: 'primary' | 'secondary';
   variant?: 'default' | 'text' | 'icon';
   size?: 'default' | 'small' | 'big';
+  avatarImage?: any;
 }
 
 export function Avatar({
   children,
+  avatarImage,
   borderHighlight = true,
   backgroundColor = 'primary',
   variant = 'default',
@@ -19,7 +21,8 @@ export function Avatar({
   ...props
 }: AvatarProps) {
   return (
-    <Styles.Avatar avatarImage={children} borderHighlight={borderHighlight} backgroundColor={backgroundColor} size={size} variant={variant} {...props}>
+    <Styles.Avatar avatarImage={avatarImage} borderHighlight={borderHighlight} backgroundColor={backgroundColor} size={size} variant={variant} {...props}>
+      {variant === 'icon' && <img src={avatarImage} alt="" />}
       {children}
     </Styles.Avatar>
   );

@@ -18,6 +18,11 @@ declare module 'styled-components' {
         regular: string;
         distant: string;
       };
+      weight: {
+        regular: string;
+        medium: string;
+        bold: string;
+      };
       size: {
         '0': string;
         '1': string;
@@ -59,7 +64,7 @@ declare module 'styled-components' {
       text: {
         [otherOptions: string]: string;
       };
-      border: {
+      borderColor: {
         [otherOptions: string]: string;
       };
       accent: {
