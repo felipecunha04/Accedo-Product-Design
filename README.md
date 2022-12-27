@@ -1,5 +1,6 @@
 # Accedo Design System
 
+1 - If you want to download and run the project locally.
 First of all, install all the dependencies by running the following command:
 ```bash
 npm i
@@ -7,6 +8,11 @@ npm i
 Then just run this command and the Storybook should open on your browser:
 ```bash
 npm run dev
+```
+
+2 - If you want to install the library in your project
+```bash
+npm i accedo-design-system-1
 ```
 
 This is a soon to be released library which currently has reausable TV components.
