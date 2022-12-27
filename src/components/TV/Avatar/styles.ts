@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
-type IAvatar = {
-  variant: string;
-  size: string;
-  borderHighlight: Boolean;
-  backgroundColor: string;
-  avatarImage: any;
-};
+export interface IAvatar {
+  borderHighlight?: boolean;
+  backgroundColor?: 'primary' | 'secondary';
+  variant?: 'default' | 'text' | 'icon';
+  size?: 'default' | 'small' | 'big';
+}
 
 export const Avatar = styled.div<IAvatar>`
   display: flex;
