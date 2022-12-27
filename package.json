@@ -22,7 +22,8 @@
     "build-storybook": "build-storybook",
     "token-translate": "node build.js",
     "token-transform": "npx token-transformer ./originaltokens.json ./tokens/tokens.json",
-    "dev": "npm run token-transform && npm run token-translate && concurrently --kill-others \"npm run start\" \"npm run storybook\""
+    "dev": "npm run token-transform && npm run token-translate && concurrently --kill-others \"npm run start\" \"npm run storybook\"",
+    "deploy-storybook": "npm run token-transform && npm run token-translate && build-storybook"
   },
   "peerDependencies": {
     "react": ">=16"
