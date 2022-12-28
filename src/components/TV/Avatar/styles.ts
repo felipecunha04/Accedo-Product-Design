@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export interface IAvatar {
-  borderHighlight?: boolean;
-  backgroundColor?: 'primary' | 'secondary';
-  variant?: 'default' | 'text' | 'icon';
-  size?: 'default' | 'small' | 'big';
+  variant?: 'image' | 'text' | 'icon';
+  size?: 'medium' | 'small' | 'big';
+  status?: 'active' | 'deactivated';
 }
 
 export const Avatar = styled.div<IAvatar>`
@@ -27,7 +26,7 @@ export const Avatar = styled.div<IAvatar>`
             display: none;
           }
        `;
-      case 'icon':
+      case 'image':
         return `
           img {
             max-height: 100%;
@@ -44,29 +43,17 @@ export const Avatar = styled.div<IAvatar>`
     }
   }};
 
-  ${({ backgroundColor, theme }) => {
-    switch (backgroundColor) {
-      case 'secondary':
+  ${({ status, theme }) => {
+    switch (status) {
+      case 'deactivated':
         return `
           background: rgba(255, 255, 255, 0.15);
+          border: ${theme.borderWidth.none} solid ${theme.pallete.primary.Medium};
        `;
       default:
         return `
           background: ${theme.pallete.primary.Medium};
           box-shadow: ${theme.shadow.high};
-         }
-       `;
-    }
-  }};
-
-  ${({ borderHighlight, theme }) => {
-    switch (borderHighlight) {
-      case false:
-        return `
-          border: ${theme.borderWidth.none} solid ${theme.pallete.primary.Medium};
-       `;
-      default:
-        return `
           border: ${theme.borderWidth.tvAvatar} solid ${theme.pallete.primary.Medium};
          }
        `;
@@ -80,6 +67,10 @@ export const Avatar = styled.div<IAvatar>`
           width: 64px;
           height: 64px;
           font-size: ${theme.font.size['8']};
+
+          svg {
+            width: 17px;
+          }
        `;
       case 'big':
         return `
@@ -92,6 +83,10 @@ export const Avatar = styled.div<IAvatar>`
           width: 120px;
           height: 120px;
           font-size: ${theme.font.size['11']};
+
+          svg {
+            width: 57px;
+          }
          }
        `;
     }

@@ -17,28 +17,23 @@ const meta: Meta = {
   component: Avatar,
   argTypes: {
     variant: {
-      options: ['default', 'text', 'icon'],
+      options: ['image', 'text', 'icon'],
       description: 'Variant type of the Avatar Component',
       control: { type: 'select' },
-      defaultValue: 'default'
+      defaultValue: 'image'
     },
-    backgroundColor: {
-      options: ['primary', 'secondary'],
-      description: 'Select the background color when the avatar does not have an image',
+    status: {
+      options: ['active', 'deactivated'],
+      description: 'The status sets the border as active or not',
       control: { type: 'select' },
       defaultValue: 'primary'
     },
     size: {
-      options: ['default', 'small', 'big'],
+      options: ['small', 'medium', 'big'],
       description: 'Sets the size of the Avatar',
       control: { type: 'select' },
-      defaultValue: 'default'
-    },
-    borderHighlight: {
-      options: [true, false],
-      control: { type: 'inline-radio' },
-      defaultValue: true
-    },
+      defaultValue: 'medium'
+    }
   },
   parameters: {
     docs: {
@@ -55,7 +50,7 @@ export default meta;
 const Default = (args: AvatarProps) => (
   <ThemeProvider theme={theme}>
     <Avatar {...args} avatarImage={AvatarImage}>
-      {args.variant === 'text' && 'A' || args.variant === 'default' && AvatarIcon}
+      {args.variant === 'text' && 'A' || args.variant === 'icon' && AvatarIcon}
     </Avatar>
   </ThemeProvider>
 );

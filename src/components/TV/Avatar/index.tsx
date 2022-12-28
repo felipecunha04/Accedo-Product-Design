@@ -5,24 +5,23 @@ import * as Styles from './styles';
 export interface AvatarProps extends Styles.IAvatar {
   children: ReactNode | string;
   avatarImage: string;
+  status: 'active' | 'deactivated';
 }
 
 export function Avatar({
   children,
   avatarImage,
-  borderHighlight = true,
-  backgroundColor = 'primary',
-  variant = 'default',
-  size = 'default',
+  status = 'active',
+  variant = 'image',
+  size = 'medium',
 }: AvatarProps) {
   return (
     <Styles.Avatar
-      borderHighlight={borderHighlight}
-      backgroundColor={backgroundColor}
+      status={status}
       size={size}
       variant={variant}
     >
-      {variant === 'icon' && <img src={avatarImage} alt="" />}
+      {variant === 'image' && <img src={avatarImage} alt="User Avatar" />}
       {children}
     </Styles.Avatar>
   );
