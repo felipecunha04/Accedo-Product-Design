@@ -2,26 +2,18 @@ import React, { ReactNode } from 'react';
 
 import * as Styles from './styles';
 
-export interface ButtonProps extends Styles.IButton {
+export interface IconButtonProps extends Styles.IButton {
   children: ReactNode | string;
-  leftIcon?: JSX.Element;
-  rightIcon?: JSX.Element;
 }
 
-export function Button({
+export function IconButton({
   children,
-  leftIcon,
-  rightIcon,
   variant = 'default',
   ...props
-}: ButtonProps) {
+}: IconButtonProps) {
   return (
     <Styles.Button variant={variant} {...props}>
-      {leftIcon && leftIcon}
-
       {children}
-
-      {rightIcon && rightIcon}
     </Styles.Button>
   );
 }

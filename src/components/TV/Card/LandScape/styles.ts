@@ -1,41 +1,24 @@
 import styled, { css } from 'styled-components';
 
 export interface ICard {
-  variant: 'portrait' | 'landscape';
   size?: 'small' | 'medium' | 'large';
   imgSrc: string;
   progress?: number;
 }
 
 const sizeMap = {
-  landscape: {
-    small: css`
-      width: 464px;
-      height: 261px;
-    `,
-    medium: css`
-      width: 640px;
-      height: 360px;
-    `,
-    large: css`
-      width: 1200px;
-      height: 675px;
-    `,
-  },
-  portrait: {
-    small: css`
-      width: 290px;
-      height: 435px;
-    `,
-    medium: css`
-      width: 350px;
-      height: 525px;
-    `,
-    large: css`
-      width: 450px;
-      height: 675px;
-    `,
-  },
+  small: css`
+    width: 464px;
+    height: 261px;
+  `,
+  medium: css`
+    width: 640px;
+    height: 360px;
+  `,
+  large: css`
+    width: 1200px;
+    height: 675px;
+  `,
 };
 
 export const ImageContainer = styled.div<ICard>`
@@ -46,21 +29,8 @@ export const ImageContainer = styled.div<ICard>`
   background-size: contain;
   background-repeat: no-repeat;
   border: ${({ theme }) => theme.spacing.quarck} solid transparent;
-
-  ${({ variant, size = 'small' }) => {
-    switch (variant) {
-      case 'landscape':
-        return `
-        ${sizeMap.landscape[size]}
-        aspect-ratio: 16 / 9;
-       `;
-      default:
-        return `
-          ${sizeMap.portrait[size]}
-          aspect-ratio: 2 / 3;
-       `;
-    }
-  }}
+  aspect-ratio: 16 / 9;
+  ${({ size = 'small' }) => sizeMap[size]}
 `;
 
 export const Card = styled.div`
@@ -102,9 +72,8 @@ export const ProgressBar = styled.progress`
   }
 `;
 
-export const Title = styled.h3<Pick<ICard, 'variant' | 'size'>>`
-  margin: ${({ theme, variant }) =>
-    `${variant === 'portrait' ? theme.spacing.xs : theme.spacing.sm} 0 0`};
+export const Title = styled.h3<Pick<ICard, 'size'>>`
+  margin: ${({ theme }) => `${theme.spacing.sm} 0 0`};
   color: ${({ theme }) => theme.pallete.neutral.White};
   font-family: ${({ theme }) => theme.font.family.brand};
   line-height: ${({ size, theme }) =>

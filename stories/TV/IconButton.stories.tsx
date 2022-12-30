@@ -2,7 +2,10 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
 
-import { Button, ButtonProps } from '../../src/components/TV/Button';
+import {
+  IconButton,
+  IconButtonProps,
+} from '../../src/components/TV/IconButton';
 import { theme } from '../../src/styles/theme';
 
 const PlusIcon = (
@@ -12,8 +15,8 @@ const PlusIcon = (
 );
 
 const meta: Meta = {
-  title: 'TV/Button',
-  component: Button,
+  title: 'TV/Icon Button',
+  component: IconButton,
   argTypes: {
     disabled: {
       options: [true, false],
@@ -21,28 +24,15 @@ const meta: Meta = {
     },
     variant: {
       options: ['default', 'text'],
+      defaultValue: 'default',
       description: 'Variant type of the Component',
       control: { type: 'select' },
-    },
-    rightIcon: {
-      options: ['PlusIcon', 'none'],
-      mapping: {
-        PlusIcon: PlusIcon,
-        none: <></>,
-      },
-    },
-    leftIcon: {
-      options: ['PlusIcon', 'none'],
-      mapping: {
-        PlusIcon: PlusIcon,
-        none: <></>,
-      },
     },
   },
   parameters: {
     docs: {
       description: {
-        component: 'Default Button Component',
+        component: 'Default Icon Button Component',
       },
     },
   },
@@ -50,11 +40,9 @@ const meta: Meta = {
 
 export default meta;
 
-const Template = (args: ButtonProps) => (
+const Template = (args: IconButtonProps) => (
   <ThemeProvider theme={theme}>
-    <Button {...args}>
-      Click Me
-    </Button>
+    <IconButton {...args}>{PlusIcon}</IconButton>
   </ThemeProvider>
 );
 
@@ -62,9 +50,6 @@ export const Default = Template.bind({});
 
 Default.args = {
   disabled: false,
-  variant: 'default',
-  leftIcon: 'PlusIcon',
-  rightIcon: 'PlusIcon',
 };
 
 export const Text = Template.bind({});
@@ -72,6 +57,4 @@ export const Text = Template.bind({});
 Text.args = {
   disabled: false,
   variant: 'text',
-  leftIcon: 'PlusIcon',
-  rightIcon: 'PlusIcon',
 };

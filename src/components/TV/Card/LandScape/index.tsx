@@ -2,31 +2,28 @@ import React from 'react';
 
 import * as Styles from './styles';
 
-export interface CardProps extends Styles.ICard {
+export interface LandScapeCardProps extends Styles.ICard {
   title?: string;
   subtitle?: string;
 }
 
-export function Card({
-  variant,
+function LandScapeCard({
   imgSrc,
   title,
   subtitle,
   progress,
   size = 'small',
   ...props
-}: CardProps) {
+}: LandScapeCardProps) {
   return (
     <Styles.Card {...props}>
-      <Styles.ImageContainer variant={variant} imgSrc={imgSrc} size={size}>
+      <Styles.ImageContainer imgSrc={imgSrc} size={size}>
         {progress && <Styles.ProgressBar value={progress} max="100" />}
       </Styles.ImageContainer>
-      {title && (
-        <Styles.Title variant={variant} size={size}>
-          {title}
-        </Styles.Title>
-      )}
+      {title && <Styles.Title size={size}>{title}</Styles.Title>}
       {subtitle && <Styles.SubTitle size={size}>{subtitle}</Styles.SubTitle>}
     </Styles.Card>
   );
 }
+
+export default LandScapeCard;
