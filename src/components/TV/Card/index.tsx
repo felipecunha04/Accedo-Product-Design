@@ -1,29 +1,32 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 
 import * as Styles from './styles';
 
-export interface CardProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode | string;
-  leftIcon?: JSX.Element;
-  rightIcon?: JSX.Element;
-  variant?: 'default' | 'text' | 'iconButton';
+export interface CardProps extends Styles.ICard {
+  title?: string;
+  subtitle?: string;
 }
 
 export function Card({
-  children,
-  leftIcon,
-  rightIcon,
-  variant = 'default',
+  variant,
+  imgSrc,
+  title,
+  subtitle,
+  progress,
+  size = 'small',
   ...props
 }: CardProps) {
   return (
-    <Styles.Card variant={variant} {...props}>
-      {variant !== 'iconButton' && leftIcon}
-
-      {children}
-
-      {variant !== 'iconButton' && rightIcon}
+    <Styles.Card {...props}>
+      <Styles.ImageContainer variant={variant} imgSrc={imgSrc} size={size}>
+        {progress && <Styles.ProgressBar value={progress} max="100" />}
+      </Styles.ImageContainer>
+      {title && (
+        <Styles.Title variant={variant} size={size}>
+          {title}
+        </Styles.Title>
+      )}
+      {subtitle && <Styles.SubTitle size={size}>{subtitle}</Styles.SubTitle>}
     </Styles.Card>
   );
 }
