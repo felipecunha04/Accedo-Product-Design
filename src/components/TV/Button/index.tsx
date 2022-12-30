@@ -2,12 +2,10 @@ import React, { ReactNode } from 'react';
 
 import * as Styles from './styles';
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends Styles.IButton {
   children: ReactNode | string;
   leftIcon?: JSX.Element;
   rightIcon?: JSX.Element;
-  variant?: 'default' | 'text' | 'iconButton';
 }
 
 export function Button({
@@ -19,11 +17,11 @@ export function Button({
 }: ButtonProps) {
   return (
     <Styles.Button variant={variant} {...props}>
-      {variant !== 'iconButton' && leftIcon}
+      {leftIcon && leftIcon}
 
       {children}
 
-      {variant !== 'iconButton' && rightIcon}
+      {rightIcon && rightIcon}
     </Styles.Button>
   );
 }

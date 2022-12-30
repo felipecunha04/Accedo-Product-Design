@@ -20,8 +20,8 @@ const meta: Meta = {
       control: { type: 'inline-radio' },
     },
     variant: {
-      options: ['default', 'text', 'iconButton'],
-      description: 'Variant type of the Button Component',
+      options: ['default', 'text'],
+      description: 'Variant type of the Component',
       control: { type: 'select' },
     },
     rightIcon: {
@@ -42,7 +42,7 @@ const meta: Meta = {
   parameters: {
     docs: {
       description: {
-        component: 'Default button component',
+        component: 'Default Button Component',
       },
     },
   },
@@ -50,37 +50,28 @@ const meta: Meta = {
 
 export default meta;
 
-const Default = (args: ButtonProps) => (
+const Template = (args: ButtonProps) => (
   <ThemeProvider theme={theme}>
     <Button {...args}>
-      {args.variant === 'iconButton' ? PlusIcon : 'Click me'}
+      Click Me
     </Button>
   </ThemeProvider>
 );
 
-export const DefaultButton = Default.bind({});
+export const Default = Template.bind({});
 
-DefaultButton.args = {
+Default.args = {
   disabled: false,
   variant: 'default',
   leftIcon: 'PlusIcon',
   rightIcon: 'PlusIcon',
 };
 
-export const TextButton = DefaultButton.bind({});
+export const Text = Template.bind({});
 
-TextButton.args = {
+Text.args = {
   disabled: false,
   variant: 'text',
   leftIcon: 'PlusIcon',
   rightIcon: 'PlusIcon',
-};
-
-export const IconButton = DefaultButton.bind({});
-
-IconButton.args = {
-  disabled: false,
-  variant: 'iconButton',
-  leftIcon: 'none',
-  rightIcon: 'none',
 };

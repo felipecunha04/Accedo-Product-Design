@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-type IButton = {
-  variant: string;
-};
+export interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'default' | 'text';
+}
 
 export const Button = styled.button<IButton>`
   display: flex;
@@ -58,10 +58,6 @@ export const Button = styled.button<IButton>`
              box-shadow: none;
            }
          }
-       `;
-      case 'iconButton':
-        return `
-         padding: ${theme.spacing['2xs']};
        `;
       default:
         return `

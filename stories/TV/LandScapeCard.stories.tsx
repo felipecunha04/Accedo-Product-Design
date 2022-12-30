@@ -2,18 +2,15 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
 
-import { Card, CardProps } from '../../src/components/TV/Card';
+import LandScapeCard, {
+  LandScapeCardProps,
+} from '../../src/components/TV/Card/LandScape';
 import { theme } from '../../src/styles/theme';
 
 const meta: Meta = {
   title: 'TV/Card',
-  component: Card,
+  component: LandScapeCard,
   argTypes: {
-    variant: {
-      options: ['portrait', 'landscape'],
-      description: 'Variant type of the component',
-      control: { type: 'select' },
-    },
     size: {
       options: ['small', 'medium', 'large'],
       description: 'Size of the component',
@@ -41,7 +38,7 @@ const meta: Meta = {
   parameters: {
     docs: {
       description: {
-        component: 'Default Card component',
+        component: 'Default LandScape Card Component',
       },
     },
   },
@@ -49,23 +46,15 @@ const meta: Meta = {
 
 export default meta;
 
-const Portrait = (args: CardProps) => (
+const Template = (args: LandScapeCardProps) => (
   <ThemeProvider theme={theme}>
-    <Card {...args}></Card>
+    <LandScapeCard {...args}></LandScapeCard>
   </ThemeProvider>
 );
 
-export const PortraitCard = Portrait.bind({});
-export const LandScapeCard = Portrait.bind({});
+export const LandScape = Template.bind({});
 
-PortraitCard.args = {
-  variant: 'portrait',
-  imgSrc:
-    'https://firebasestorage.googleapis.com/v0/b/accedo-ds.appspot.com/o/black-panther-portrait-2x.png?alt=media',
-};
-
-LandScapeCard.args = {
-  variant: 'landscape',
+LandScape.args = {
   subtitle: 'Secondary text',
   progress: '43',
   imgSrc:
