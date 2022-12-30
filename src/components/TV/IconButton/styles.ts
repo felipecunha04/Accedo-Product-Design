@@ -1,6 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Button = styled.button`
+export interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'default' | 'text';
+}
+
+export const Button = styled.button<IButton>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,11 +31,33 @@ export const Button = styled.button`
     }
   }
 
-  &:disabled {
-    color: ${({ theme }) => theme.pallete.neutral.Grey60};
-
-    svg {
-      fill: ${({ theme }) => theme.pallete.neutral.Grey60};
-    }
+  &:disabled svg {
+    fill: ${({ theme }) => theme.pallete.neutral.Grey60};
   }
+
+  ${({ variant, theme }) => {
+    switch (variant) {
+      case 'text':
+        return css`
+          background-color: transparent;
+
+          &:enabled {
+            &:hover,
+            &:focus {
+              box-shadow: none;
+            }
+          }
+
+          &:disabled svg {
+            fill: ${theme.pallete.neutral.Grey30};
+          }
+        `;
+      default:
+        return css`
+          &:disabled {
+            background-color: ${theme.pallete.neutral.Grey30};
+          }
+        `;
+    }
+  }}
 `;

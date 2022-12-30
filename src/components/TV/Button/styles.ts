@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'default' | 'text';
@@ -50,21 +50,30 @@ export const Button = styled.button<IButton>`
   ${({ variant, theme }) => {
     switch (variant) {
       case 'text':
-        return `
-         background-color: transparent;
-         &:enabled {
-           &:hover,
-           &:focus {
-             box-shadow: none;
-           }
-         }
-       `;
+        return css`
+          background-color: transparent;
+
+          &:enabled {
+            &:hover,
+            &:focus {
+              box-shadow: none;
+            }
+          }
+
+          &:disabled {
+            color: ${theme.pallete.neutral.Grey30};
+            
+            svg {
+              fill: ${theme.pallete.neutral.Grey30};
+            }
+          }
+        `;
       default:
-        return `
-         &:disabled {
-           background-color: ${theme.pallete.neutral.Grey30};
-         }
-       `;
+        return css`
+          &:disabled {
+            background-color: ${theme.pallete.neutral.Grey30};
+          }
+        `;
     }
   }}
 `;

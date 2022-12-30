@@ -22,6 +22,12 @@ const meta: Meta = {
       options: [true, false],
       control: { type: 'inline-radio' },
     },
+    variant: {
+      options: ['default', 'text'],
+      defaultValue: 'default',
+      description: 'Variant type of the Component',
+      control: { type: 'select' },
+    },
   },
   parameters: {
     docs: {
@@ -44,4 +50,11 @@ export const Default = Template.bind({});
 
 Default.args = {
   disabled: false,
+};
+
+export const Text = Template.bind({});
+
+Text.args = {
+  disabled: false,
+  variant: 'text',
 };
