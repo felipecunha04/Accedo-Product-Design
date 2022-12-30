@@ -18,15 +18,12 @@ export function Card({
 }: CardProps) {
   return (
     <Styles.Card {...props}>
-      <Styles.ImageContainer variant={variant} imgSrc={imgSrc} size={size}>
-        {progress && <Styles.ProgressBar value={progress} max="100" />}
-      </Styles.ImageContainer>
+      <Styles.ImageContainer variant={variant} imgSrc={imgSrc} size={size}/>
       {title && (
         <Styles.Title variant={variant} size={size}>
           {title}
         </Styles.Title>
       )}
-      {subtitle && <Styles.SubTitle size={size}>{subtitle}</Styles.SubTitle>}
     </Styles.Card>
   );
 }
