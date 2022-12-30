@@ -54,7 +54,6 @@ export const Navigation = styled.div<INavigation>`
         return `
           background: ${theme.pallete.primary.Medium};
           box-shadow: ${theme.shadow.high};
-          border: ${theme.borderWidth.tvNavigation} solid ${theme.pallete.primary.Medium};
          }
        `;
     }
