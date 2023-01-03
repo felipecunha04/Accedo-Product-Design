@@ -3,7 +3,6 @@ import React, { ReactNode } from 'react';
 import * as Styles from './styles';
 import { Button } from '../Button';
 import { Avatar } from '../Avatar';
-import NavigationImage from '../../../../static/avatarImage.png';
 
 export interface NavigationProps extends Styles.INavigation {
   children: ReactNode | string;
@@ -18,7 +17,7 @@ export function Navigation({
   status = 'active',
   variant = 'image',
   position = 'center',
-  logo = NavigationImage,
+  logo = '',
 }: NavigationProps) {
   return (
     <Styles.Navigation
