@@ -39,6 +39,7 @@ export const Navigation = styled.header<INavigation>`
 
   .logo {
     cursor: pointer;
+    width: 80px;
   };
 
   .nav-links {
@@ -57,65 +58,4 @@ export const Navigation = styled.header<INavigation>`
   .middle-links li a:hover {
     color: #0088a9;
   };
-
-  /* button {
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  };
-
-  button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-  } */
-
-  /* ${({ status, theme }) => {
-    switch (status) {
-      case 'deactivated':
-        return `
-          background: rgba(255, 255, 255, 0.15);
-          border: ${theme.borderWidth.none} solid ${theme.pallete.primary.Medium};
-       `;
-      default:
-        return `
-          background: ${theme.pallete.primary.Medium};
-          box-shadow: ${theme.shadow.high};
-         }
-       `;
-    }
-  }};
-
-  ${({ size, theme }) => {
-    switch (size) {
-      case 'small':
-        return `
-          width: 64px;
-          height: 64px;
-          font-size: ${theme.font.size['8']};
-
-          svg {
-            width: 17px;
-          }
-       `;
-      case 'big':
-        return `
-          width: 264px;
-          height: 264px;
-          font-size: ${theme.font.size['15']};
-       `;
-      default:
-        return `
-          width: 120px;
-          height: 120px;
-          font-size: ${theme.font.size['11']};
-
-          svg {
-            width: 57px;
-          }
-         }
-       `;
-    }
-  }}; */
 `;

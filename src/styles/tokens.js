@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 03 Jan 2023 12:40:52 GMT
+ * Generated on Tue, 03 Jan 2023 13:35:52 GMT
  */
 
 export const ColorOvGradientDefault = "#000000";
