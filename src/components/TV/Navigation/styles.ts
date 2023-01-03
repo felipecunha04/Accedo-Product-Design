@@ -2,48 +2,76 @@ import styled from 'styled-components';
 
 export interface INavigation {
   variant?: 'image' | 'text' | 'icon';
-  size?: 'medium' | 'small' | 'big';
+  position?: 'center' | 'left';
   status?: 'active' | 'deactivated';
 }
 
-export const Navigation = styled.div<INavigation>`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: ${({ theme }) => theme.borderRadius.circle};
+export const Navigation = styled.header<INavigation>`
+  /* border-radius: ${({ theme }) => theme.borderRadius.circle};
   background: rgba(255, 255, 255, 0.15);
   font-family: ${({ theme }) => theme.font.family.brand};
   font-style: normal;
   font-weight: ${({ theme }) => theme.font.weight.regular};
   line-height: ${({ theme }) => theme.font.lineHeight.distant};
-  color: ${({ theme }) => theme.pallete.neutral.White};
+  color: ${({ theme }) => theme.pallete.neutral.White}; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10%;
 
-  ${({ variant }) => {
-    switch (variant) {
-      case 'text':
+  ${({ position }) => {
+    switch (position) {
+      case 'left':
         return `
-          svg {
-            display: none;
+          .right-links {
+            margin-left: auto;
           }
-       `;
-      case 'image':
-        return `
-          img {
-            max-height: 100%;
-            max-width: 100%;
-          }
-          svg {
-            display: none;
-          }
+          justify-content: flex-start;
        `;
       default:
         return `
-         }
+          justify-content: space-between;
+
        `;
     }
   }};
+  
 
-  ${({ status, theme }) => {
+  .logo {
+    cursor: pointer;
+  };
+
+  .nav-links {
+    list-style: none;
+  };
+
+  .middle-links li {
+    display: flex;
+    padding: 0px 20px;
+  };
+
+  .middle-links li a {
+    transition: all 0.3s ease 0s;
+  };
+
+  .middle-links li a:hover {
+    color: #0088a9;
+  };
+
+  /* button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  };
+
+  button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  } */
+
+  /* ${({ status, theme }) => {
     switch (status) {
       case 'deactivated':
         return `
@@ -89,5 +117,5 @@ export const Navigation = styled.div<INavigation>`
          }
        `;
     }
-  }};
+  }}; */
 `;

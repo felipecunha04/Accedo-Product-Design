@@ -4,7 +4,7 @@ import * as Styles from './styles';
 
 export interface AvatarProps extends Styles.IAvatar {
   children: ReactNode | string;
-  avatarImage: string;
+  avatarImage?: string;
   status: 'active' | 'deactivated';
 }
 
