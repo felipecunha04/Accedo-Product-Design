@@ -2,19 +2,19 @@ import React from 'react';
 
 import * as Styles from './styles';
 
-export interface LandscapeCardProps extends Styles.ICard {
+export interface LandScapeCardProps extends Styles.ICard {
   title?: string;
   subtitle?: string;
 }
 
-function LandscapeCard({
+function LandScapeCard({
   imgSrc,
   title,
   subtitle,
   progress,
   size = 'small',
   ...props
-}: LandscapeCardProps) {
+}: LandScapeCardProps) {
   return (
     <Styles.Card {...props}>
       <Styles.ImageContainer imgSrc={imgSrc} size={size}>
@@ -26,4 +26,4 @@ function LandscapeCard({
   );
 }
 
-export default LandscapeCard;
+export default LandScapeCard;

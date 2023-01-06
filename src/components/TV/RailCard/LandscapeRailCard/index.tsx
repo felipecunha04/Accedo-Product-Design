@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 
 import * as Styles from './styles';
-import LandscapeCard from '../../Card/Landscape';
+import LandScapeCard from '../../Card/LandScape';
 import Slider from '../../Slider';
 
 export interface LandscapeRailCardProps extends Styles.ILandscapeRailCard {
@@ -39,8 +39,8 @@ export function LandscapeRailCard({
     <Slider {...SliderProps}
     >
       {LandscapeArray.map(slide => (
-        <LandscapeCard {...slide}>
-        </LandscapeCard>
+        <LandScapeCard {...slide}>
+        </LandScapeCard>
       ))}
     </Slider>
   );
