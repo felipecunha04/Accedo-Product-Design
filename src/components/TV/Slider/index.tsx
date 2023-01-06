@@ -34,10 +34,10 @@ const Slider: React.FC<SliderProps> = ({
   const totalPages: number = Math.ceil(children.length / visibleSlides) - 1;
 
   useEffect(() => {
-    //@ts-ignore
     const resizeObserver = new ResizeObserver(entries => {
       setScrollSize(entries[0].contentRect.width);
     });
+    //@ts-ignore
     resizeObserver.observe(sliderRef.current);
   }, [sliderRef]);
 
