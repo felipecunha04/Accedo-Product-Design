@@ -2,14 +2,14 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
 
-import LandScapeCard, {
-  LandScapeCardProps,
-} from '../../src/components/TV/Card/LandScape';
+import LandscapeCard, {
+  LandscapeCardProps,
+} from '../../src/components/TV/Card/Landscape';
 import { theme } from '../../src/styles/theme';
 
 const meta: Meta = {
   title: 'TV/Card',
-  component: LandScapeCard,
+  component: LandscapeCard,
   argTypes: {
     size: {
       options: ['small', 'medium', 'large'],
@@ -38,7 +38,7 @@ const meta: Meta = {
   parameters: {
     docs: {
       description: {
-        component: 'Default LandScape Card Component',
+        component: 'Default Landscape Card Component',
       },
     },
   },
@@ -46,15 +46,15 @@ const meta: Meta = {
 
 export default meta;
 
-const Template = (args: LandScapeCardProps) => (
+const Template = (args: LandscapeCardProps) => (
   <ThemeProvider theme={theme}>
-    <LandScapeCard {...args}></LandScapeCard>
+    <LandscapeCard {...args}></LandscapeCard>
   </ThemeProvider>
 );
 
-export const LandScape = Template.bind({});
+export const Landscape = Template.bind({});
 
-LandScape.args = {
+Landscape.args = {
   subtitle: 'Secondary text',
   progress: '43',
   imgSrc:
