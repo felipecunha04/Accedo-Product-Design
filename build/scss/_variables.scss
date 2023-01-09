@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Fri, 06 Jan 2023 13:06:45 GMT
+// Generated on Mon, 09 Jan 2023 16:54:32 GMT
 
 $color-ov-gradient-default: #000000;
 $color-ov-gradient-hero-banner: #000000;
@@ -47,10 +47,11 @@ $color-text-brand: #3c92dd;
 $color-text-disabled: #454d54;
 $color-text-on-accent: #ffffff;
 $color-text-on-disabled: #9299a0;
-$color-text-input-default: #c7cdd1;
+$color-text-input-default: #9299a0;
 $color-text-input-filled: #ffffff;
 $color-text-input-emphasis: #75b7f0;
 $color-text-input-error: #e09185;
+$color-text-input-success: #40bf7f;
 $color-text-on-inverse-default: #171a1c;
 $color-text-on-inverse-subtle: #454d54;
 $color-text-on-inverse-disabled: #c7cdd1;
@@ -58,9 +59,10 @@ $color-border-default: #3c92dd;
 $color-border-alt: #ffffff;
 $color-border-subtle: #051b2e;
 $color-border-disabled: #454d54;
-$color-border-input-default: #c7cdd1;
+$color-border-input-default: #9299a0;
 $color-border-input-emphasis: #75b7f0;
 $color-border-input-error: #e09185;
+$color-border-input-success: #40bf7f;
 $color-accent-default: #3c92dd;
 $color-accent-emphasis: #0a6cc2;
 $color-accent-subtle: #051b2e;
@@ -175,6 +177,9 @@ $type-tv-title-emphasis: [object Object];
 $type-tv-button-default: [object Object];
 $type-tv-body-large: [object Object];
 $type-tv-body-medium: [object Object];
+$type-tv-input-text: [object Object];
+$type-tv-input-support: [object Object];
+$type-tv-input-label: [object Object];
 $type-tv-caption-default: [object Object];
 $type-tv-caption-emphasis: [object Object];
 $border-width-none: 0;
@@ -184,6 +189,7 @@ $border-width-heavy: 4;
 $border-width-button-outlined-default: 1;
 $border-width-tv-card: 4;
 $border-width-tv-avatar: 4;
+$border-width-tv-input: 2;
 $opacity-full: 100%;
 $opacity-intense: 80%;
 $opacity-medium: 50%;

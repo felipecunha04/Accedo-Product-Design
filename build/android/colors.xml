@@ -2,7 +2,7 @@
 
 <!--
   Do not edit directly
-  Generated on Fri, 06 Jan 2023 13:06:45 GMT
+  Generated on Mon, 09 Jan 2023 16:54:32 GMT
 -->
 <resources>
   <color name="color_ov_gradient_default">#ff000000</color>
@@ -50,10 +50,11 @@
   <color name="color_text_disabled">#ff454d54</color>
   <color name="color_text_on_accent">#ffffffff</color>
   <color name="color_text_on_disabled">#ff9299a0</color>
-  <color name="color_text_input_default">#ffc7cdd1</color>
+  <color name="color_text_input_default">#ff9299a0</color>
   <color name="color_text_input_filled">#ffffffff</color>
   <color name="color_text_input_emphasis">#ff75b7f0</color>
   <color name="color_text_input_error">#ffe09185</color>
+  <color name="color_text_input_success">#ff40bf7f</color>
   <color name="color_text_on_inverse_default">#ff171a1c</color>
   <color name="color_text_on_inverse_subtle">#ff454d54</color>
   <color name="color_text_on_inverse_disabled">#ffc7cdd1</color>
@@ -61,9 +62,10 @@
   <color name="color_border_alt">#ffffffff</color>
   <color name="color_border_subtle">#ff051b2e</color>
   <color name="color_border_disabled">#ff454d54</color>
-  <color name="color_border_input_default">#ffc7cdd1</color>
+  <color name="color_border_input_default">#ff9299a0</color>
   <color name="color_border_input_emphasis">#ff75b7f0</color>
   <color name="color_border_input_error">#ffe09185</color>
+  <color name="color_border_input_success">#ff40bf7f</color>
   <color name="color_accent_default">#ff3c92dd</color>
   <color name="color_accent_emphasis">#ff0a6cc2</color>
   <color name="color_accent_subtle">#ff051b2e</color>

@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Fri, 06 Jan 2023 13:06:45 GMT
+// Generated on Mon, 09 Jan 2023 16:54:32 GMT
 
 
 import UIKit
@@ -27,6 +27,7 @@ public enum StyleDictionaryEnum {
     public static let borderWidthThin = 1
     public static let borderWidthTvAvatar = 4
     public static let borderWidthTvCard = 4
+    public static let borderWidthTvInput = 2
     public static let colorAccentDefault = UIColor(red: 0.235, green: 0.573, blue: 0.867, alpha: 1)
     public static let colorAccentDisabled = UIColor(red: 0.271, green: 0.302, blue: 0.329, alpha: 1)
     public static let colorAccentEmphasis = UIColor(red: 0.039, green: 0.424, blue: 0.761, alpha: 1)
@@ -41,9 +42,10 @@ public enum StyleDictionaryEnum {
     public static let colorBorderAlt = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
     public static let colorBorderDefault = UIColor(red: 0.235, green: 0.573, blue: 0.867, alpha: 1)
     public static let colorBorderDisabled = UIColor(red: 0.271, green: 0.302, blue: 0.329, alpha: 1)
-    public static let colorBorderInputDefault = UIColor(red: 0.780, green: 0.804, blue: 0.820, alpha: 1)
+    public static let colorBorderInputDefault = UIColor(red: 0.573, green: 0.600, blue: 0.627, alpha: 1)
     public static let colorBorderInputEmphasis = UIColor(red: 0.459, green: 0.718, blue: 0.941, alpha: 1)
     public static let colorBorderInputError = UIColor(red: 0.878, green: 0.569, blue: 0.522, alpha: 1)
+    public static let colorBorderInputSuccess = UIColor(red: 0.251, green: 0.749, blue: 0.498, alpha: 1)
     public static let colorBorderSubtle = UIColor(red: 0.020, green: 0.106, blue: 0.180, alpha: 1)
     public static let colorDuskyDark = UIColor(red: 0.071, green: 0.106, blue: 0.129, alpha: 1)
     public static let colorDuskyDarkest = UIColor(red: 0.035, green: 0.051, blue: 0.067, alpha: 1)
@@ -80,10 +82,11 @@ public enum StyleDictionaryEnum {
     public static let colorTextBrand = UIColor(red: 0.235, green: 0.573, blue: 0.867, alpha: 1)
     public static let colorTextDefault = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
     public static let colorTextDisabled = UIColor(red: 0.271, green: 0.302, blue: 0.329, alpha: 1)
-    public static let colorTextInputDefault = UIColor(red: 0.780, green: 0.804, blue: 0.820, alpha: 1)
+    public static let colorTextInputDefault = UIColor(red: 0.573, green: 0.600, blue: 0.627, alpha: 1)
     public static let colorTextInputEmphasis = UIColor(red: 0.459, green: 0.718, blue: 0.941, alpha: 1)
     public static let colorTextInputError = UIColor(red: 0.878, green: 0.569, blue: 0.522, alpha: 1)
     public static let colorTextInputFilled = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
+    public static let colorTextInputSuccess = UIColor(red: 0.251, green: 0.749, blue: 0.498, alpha: 1)
     public static let colorTextOnAccent = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
     public static let colorTextOnDisabled = UIColor(red: 0.573, green: 0.600, blue: 0.627, alpha: 1)
     public static let colorTextOnInverseDefault = UIColor(red: 0.090, green: 0.102, blue: 0.110, alpha: 1)
@@ -189,6 +192,9 @@ public enum StyleDictionaryEnum {
     public static let typeTvHeadingEmphasisH3 = [object Object]
     public static let typeTvHeadingEmphasisH4 = [object Object]
     public static let typeTvHeadingEmphasisH5 = [object Object]
+    public static let typeTvInputLabel = [object Object]
+    public static let typeTvInputSupport = [object Object]
+    public static let typeTvInputText = [object Object]
     public static let typeTvTitleDefault = [object Object]
     public static let typeTvTitleEmphasis = [object Object]
     public static let typeWebBodyLarge = [object Object]

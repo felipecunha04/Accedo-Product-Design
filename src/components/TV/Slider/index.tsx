@@ -29,6 +29,7 @@ const Slider: React.FC<SliderProps> = ({
   const [scrollSize, setScrollSize] = useState(0);
   
   const sliderRef = useRef<HTMLElement>(null);
+  const tabIndexValue = 0;
 
   const visibleSlides = numberOfSlides(maxVisibleSlides, scrollSize);
   const totalPages: number = Math.ceil(children.length / visibleSlides) - 1;
@@ -51,21 +52,21 @@ const Slider: React.FC<SliderProps> = ({
     }
   }, [sliderRef, currentPage, scrollSize, totalPages]);
 
-  const disableHoverEffect = () => {
-    if (sliderRef.current) sliderRef.current.style.pointerEvents = 'none';
-    setTimeout(() => {
-      if (sliderRef.current) sliderRef.current.style.pointerEvents = 'all';
-    }, pageTransition);
-  };
+  const handleSlideMove = (e: any) => {
+    if (e.keyCode === 39) return setCurrentPage(currentPage + (1));
+    if (e.keyCode === 37) return setCurrentPage(currentPage + (-1));
 
-  const handleSlideMove = (forward: boolean) => {
-    disableHoverEffect();
-    setCurrentPage(currentPage + (forward ? 1 : -1));
-
-    if (sliderRef.current)
-      sliderRef.current.style.transform = `translate3D(-${
-        (currentPage + (forward ? 1 : -1)) * scrollSize
-      }px, 0, 0)`;
+    if (sliderRef.current) {
+      if (e.keyCode === 39) {
+        sliderRef.current.style.transform = `translate3D(-${
+          (currentPage + (1)) * scrollSize
+        }px, 0, 0)`;
+      } else if (e.keyCode === 37) {
+        sliderRef.current.style.transform = `translate3D(-${
+          (currentPage + (-1)) * scrollSize
+        }px, 0, 0)`;
+      }
+    }
   };
 
   const handleMouseOver = (id: number) => {
@@ -90,7 +91,9 @@ const Slider: React.FC<SliderProps> = ({
         zoomFactor={zoomFactor}
         slideMargin={slideMargin}
         pageTransition={pageTransition}
+        onKeyDown={(e) => handleSlideMove(e)}
         ref={sliderRef}
+        tabIndex={tabIndexValue}
       >
         {children.map((child: any, i: any) => (
           <SliderItem
@@ -107,20 +110,6 @@ const Slider: React.FC<SliderProps> = ({
           </SliderItem>
         ))}
       </StyledSlider>
-      {currentPage > 0 && (
-        <div className='button-wrapper back'>
-          <button className='button back' onClick={() => handleSlideMove(false)}>
-            &#8249;
-          </button>
-        </div>
-      )}
-      {currentPage !== totalPages && (
-        <div className='button-wrapper forward'>
-          <button className='button forward' onClick={() => handleSlideMove(true)}>
-            &#8250;
-          </button>
-        </div>
-      )}
     </StyledSliderWrapper>
   );
 };

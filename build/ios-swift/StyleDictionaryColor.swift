@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Fri, 06 Jan 2023 13:06:45 GMT
+// Generated on Mon, 09 Jan 2023 16:54:32 GMT
 
 
 import UIKit
@@ -24,9 +24,10 @@ public enum StyleDictionaryColor {
     public static let borderAlt = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
     public static let borderDefault = UIColor(red: 0.235, green: 0.573, blue: 0.867, alpha: 1)
     public static let borderDisabled = UIColor(red: 0.271, green: 0.302, blue: 0.329, alpha: 1)
-    public static let borderInputDefault = UIColor(red: 0.780, green: 0.804, blue: 0.820, alpha: 1)
+    public static let borderInputDefault = UIColor(red: 0.573, green: 0.600, blue: 0.627, alpha: 1)
     public static let borderInputEmphasis = UIColor(red: 0.459, green: 0.718, blue: 0.941, alpha: 1)
     public static let borderInputError = UIColor(red: 0.878, green: 0.569, blue: 0.522, alpha: 1)
+    public static let borderInputSuccess = UIColor(red: 0.251, green: 0.749, blue: 0.498, alpha: 1)
     public static let borderSubtle = UIColor(red: 0.020, green: 0.106, blue: 0.180, alpha: 1)
     public static let duskyDark = UIColor(red: 0.071, green: 0.106, blue: 0.129, alpha: 1)
     public static let duskyDarkest = UIColor(red: 0.035, green: 0.051, blue: 0.067, alpha: 1)
@@ -63,10 +64,11 @@ public enum StyleDictionaryColor {
     public static let textBrand = UIColor(red: 0.235, green: 0.573, blue: 0.867, alpha: 1)
     public static let textDefault = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
     public static let textDisabled = UIColor(red: 0.271, green: 0.302, blue: 0.329, alpha: 1)
-    public static let textInputDefault = UIColor(red: 0.780, green: 0.804, blue: 0.820, alpha: 1)
+    public static let textInputDefault = UIColor(red: 0.573, green: 0.600, blue: 0.627, alpha: 1)
     public static let textInputEmphasis = UIColor(red: 0.459, green: 0.718, blue: 0.941, alpha: 1)
     public static let textInputError = UIColor(red: 0.878, green: 0.569, blue: 0.522, alpha: 1)
     public static let textInputFilled = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
+    public static let textInputSuccess = UIColor(red: 0.251, green: 0.749, blue: 0.498, alpha: 1)
     public static let textOnAccent = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
     public static let textOnDisabled = UIColor(red: 0.573, green: 0.600, blue: 0.627, alpha: 1)
     public static let textOnInverseDefault = UIColor(red: 0.090, green: 0.102, blue: 0.110, alpha: 1)

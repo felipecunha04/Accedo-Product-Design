@@ -21,7 +21,7 @@ const FakeData = {
 const LandscapeArray = [FakeData, FakeData, FakeData, FakeData, FakeData];
 
 const SliderProps = {
-  zoomFactor: 30, // How much the image should zoom on hover in percent
+  zoomFactor: 1, // How much the image should zoom on hover in percent
   slideMargin: 10, // Margin on each side of slides
   maxVisibleSlides: 5,
   pageTransition: 500 // Transition when flipping pages

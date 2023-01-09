@@ -1,7 +1,7 @@
 
 
 // Do not edit directly
-// Generated on Fri, 06 Jan 2023 13:06:45 GMT
+// Generated on Mon, 09 Jan 2023 16:54:32 GMT
 
 
 
@@ -26,9 +26,10 @@ object StyleDictionaryColor {
   val colorBorderAlt = Color(0xffffffff)
   val colorBorderDefault = Color(0xff3c92dd)
   val colorBorderDisabled = Color(0xff454d54)
-  val colorBorderInputDefault = Color(0xffc7cdd1)
+  val colorBorderInputDefault = Color(0xff9299a0)
   val colorBorderInputEmphasis = Color(0xff75b7f0)
   val colorBorderInputError = Color(0xffe09185)
+  val colorBorderInputSuccess = Color(0xff40bf7f)
   val colorBorderSubtle = Color(0xff051b2e)
   val colorDuskyDark = Color(0xff121b21)
   val colorDuskyDarkest = Color(0xff090d11)
@@ -65,10 +66,11 @@ object StyleDictionaryColor {
   val colorTextBrand = Color(0xff3c92dd)
   val colorTextDefault = Color(0xffffffff)
   val colorTextDisabled = Color(0xff454d54)
-  val colorTextInputDefault = Color(0xffc7cdd1)
+  val colorTextInputDefault = Color(0xff9299a0)
   val colorTextInputEmphasis = Color(0xff75b7f0)
   val colorTextInputError = Color(0xffe09185)
   val colorTextInputFilled = Color(0xffffffff)
+  val colorTextInputSuccess = Color(0xff40bf7f)
   val colorTextOnAccent = Color(0xffffffff)
   val colorTextOnDisabled = Color(0xff9299a0)
   val colorTextOnInverseDefault = Color(0xff171a1c)

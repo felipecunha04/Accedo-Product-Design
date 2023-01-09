@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Fri, 06 Jan 2023 13:06:45 GMT
+// Generated on Mon, 09 Jan 2023 16:54:32 GMT
 
 
 #import <UIKit/UIKit.h>
@@ -59,6 +59,7 @@ ColorTextInputDefault,
 ColorTextInputFilled,
 ColorTextInputEmphasis,
 ColorTextInputError,
+ColorTextInputSuccess,
 ColorTextOnInverseDefault,
 ColorTextOnInverseSubtle,
 ColorTextOnInverseDisabled,
@@ -69,6 +70,7 @@ ColorBorderDisabled,
 ColorBorderInputDefault,
 ColorBorderInputEmphasis,
 ColorBorderInputError,
+ColorBorderInputSuccess,
 ColorAccentDefault,
 ColorAccentEmphasis,
 ColorAccentSubtle,

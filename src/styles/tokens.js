@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 06 Jan 2023 13:06:45 GMT
+ * Generated on Mon, 09 Jan 2023 16:54:32 GMT
  */
 
 export const ColorOvGradientDefault = "#000000";
@@ -48,10 +48,11 @@ export const ColorTextBrand = "#3c92dd";
 export const ColorTextDisabled = "#454d54";
 export const ColorTextOnAccent = "#ffffff";
 export const ColorTextOnDisabled = "#9299a0";
-export const ColorTextInputDefault = "#c7cdd1";
+export const ColorTextInputDefault = "#9299a0";
 export const ColorTextInputFilled = "#ffffff";
 export const ColorTextInputEmphasis = "#75b7f0";
 export const ColorTextInputError = "#e09185";
+export const ColorTextInputSuccess = "#40bf7f";
 export const ColorTextOnInverseDefault = "#171a1c";
 export const ColorTextOnInverseSubtle = "#454d54";
 export const ColorTextOnInverseDisabled = "#c7cdd1";
@@ -59,9 +60,10 @@ export const ColorBorderDefault = "#3c92dd";
 export const ColorBorderAlt = "#ffffff";
 export const ColorBorderSubtle = "#051b2e";
 export const ColorBorderDisabled = "#454d54";
-export const ColorBorderInputDefault = "#c7cdd1";
+export const ColorBorderInputDefault = "#9299a0";
 export const ColorBorderInputEmphasis = "#75b7f0";
 export const ColorBorderInputError = "#e09185";
+export const ColorBorderInputSuccess = "#40bf7f";
 export const ColorAccentDefault = "#3c92dd";
 export const ColorAccentEmphasis = "#0a6cc2";
 export const ColorAccentSubtle = "#051b2e";
@@ -176,6 +178,9 @@ export const TypeTvTitleEmphasis = {"fontFamily":"Metropolis","fontWeight":"Bold
 export const TypeTvButtonDefault = {"fontFamily":"Metropolis","fontWeight":"Bold","lineHeight":"100%","fontSize":25,"letterSpacing":"0%","paragraphSpacing":0,"textDecoration":"none","textCase":"none"};
 export const TypeTvBodyLarge = {"fontFamily":"Metropolis","fontWeight":"Regular","lineHeight":"180%","fontSize":25,"letterSpacing":"0%","paragraphSpacing":0,"textDecoration":"none","textCase":"none"};
 export const TypeTvBodyMedium = {"fontFamily":"Metropolis","fontWeight":"Regular","lineHeight":"150%","fontSize":20,"letterSpacing":"0%","paragraphSpacing":0,"textDecoration":"none","textCase":"none"};
+export const TypeTvInputText = {"fontFamily":"Metropolis","fontWeight":"Regular","lineHeight":"150%","fontSize":25,"letterSpacing":"0%","paragraphSpacing":0,"textDecoration":"none","textCase":"none"};
+export const TypeTvInputSupport = {"fontFamily":"Metropolis","fontWeight":"Regular","lineHeight":"150%","fontSize":18,"letterSpacing":"0%","paragraphSpacing":0,"textDecoration":"none","textCase":"none"};
+export const TypeTvInputLabel = {"fontFamily":"Metropolis","fontWeight":"Regular","lineHeight":"100%","fontSize":18,"letterSpacing":"0%","paragraphSpacing":0,"textDecoration":"none","textCase":"none"};
 export const TypeTvCaptionDefault = {"fontFamily":"Metropolis","fontWeight":"Regular","lineHeight":"150%","fontSize":16,"letterSpacing":"0%","paragraphSpacing":0,"textDecoration":"none","textCase":"none"};
 export const TypeTvCaptionEmphasis = {"fontFamily":"Metropolis","fontWeight":"Bold","lineHeight":"150%","fontSize":16,"letterSpacing":"0%","paragraphSpacing":0,"textDecoration":"none","textCase":"none"};
 export const BorderWidthNone = 0;
@@ -185,6 +190,7 @@ export const BorderWidthHeavy = 4;
 export const BorderWidthButtonOutlinedDefault = 1;
 export const BorderWidthTvCard = 4;
 export const BorderWidthTvAvatar = 4;
+export const BorderWidthTvInput = 2;
 export const OpacityFull = "100%";
 export const OpacityIntense = "80%";
 export const OpacityMedium = "50%";
