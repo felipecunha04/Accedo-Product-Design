@@ -1545,7 +1545,7 @@
         "Mobile Shadows.High": "S:b15c2d53e5669d6349e033f6c7095f54a98b106e,",
         "Mobile Shadows.Medium": "S:3eafd7eb181b4321ba14a8608b31d6dc92a92bf6,",
         "Mobile Shadows.Low": "S:eace01dee9aa838325fa48888d21f03bf5ce183d,",
-        "shadow.none": "S:531dddc2f0a86a4759fd1bc978ca66c3b71778ed,",
+        "shadow.none": "S:cc47f38e23dccd6f491889d59bbd9952df1903e0,",
         "color.border.disabled": "S:42b2438303f95f5f9752ab4ec5a83ed5fb21c489,",
         "color.ov.gradient.default": "S:836ec42b15663fdfbea365b7cb31c91b0c9273bb,",
         "color.ov.gradient.player": "S:9fbc6d2fa2745723e8d0a7dd7c92c13a90b0acf7,",
@@ -1575,7 +1575,8 @@
         "type.tv.heading.emphasis.h3": "S:2a870eda1adca1a1678171c33a09801035d0f7f1,",
         "type.tv.heading.emphasis.h4": "S:0e04c6b21cd595a74bf4cfcb71bc591449ff864a,",
         "type.tv.heading.emphasis.h5": "S:09adb1f651a655e0ffcd979e0e419e1670f80d26,",
-        "color.ov.gradient.hero-banner": "S:22c9ddc1576cac11964d942a7975942e50b1c6f2,"
+        "color.ov.gradient.hero-banner": "S:22c9ddc1576cac11964d942a7975942e50b1c6f2,",
+        "color.border.input.success": "S:96a1a114f6d0c4817f14d8cc48d67b5ff585137d,"
       }
     }
   ],
