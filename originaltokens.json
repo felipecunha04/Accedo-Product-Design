@@ -1315,6 +1315,47 @@
             "type": "typography"
           }
         },
+        "input": {
+          "text": {
+            "value": {
+              "fontFamily": "{font.family.brand}",
+              "fontWeight": "{font.weight.regular}",
+              "lineHeight": "{font.line-height.regular}",
+              "fontSize": "{font.size.5}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "textDecoration": "{textDecoration.none}",
+              "textCase": "{textCase.none}"
+            },
+            "type": "typography"
+          },
+          "support": {
+            "value": {
+              "fontFamily": "{font.family.brand}",
+              "fontWeight": "{font.weight.regular}",
+              "lineHeight": "{font.line-height.regular}",
+              "fontSize": "{font.size.3}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "textDecoration": "{textDecoration.none}",
+              "textCase": "{textCase.none}"
+            },
+            "type": "typography"
+          },
+          "label": {
+            "value": {
+              "fontFamily": "{font.family.brand}",
+              "fontWeight": "{font.weight.regular}",
+              "lineHeight": "{font.line-height.tight}",
+              "fontSize": "{font.size.3}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "textDecoration": "{textDecoration.none}",
+              "textCase": "{textCase.none}"
+            },
+            "type": "typography"
+          }
+        },
         "caption": {
           "default": {
             "value": {
@@ -1576,7 +1617,10 @@
         "type.tv.heading.emphasis.h4": "S:0e04c6b21cd595a74bf4cfcb71bc591449ff864a,",
         "type.tv.heading.emphasis.h5": "S:09adb1f651a655e0ffcd979e0e419e1670f80d26,",
         "color.ov.gradient.hero-banner": "S:22c9ddc1576cac11964d942a7975942e50b1c6f2,",
-        "color.border.input.success": "S:96a1a114f6d0c4817f14d8cc48d67b5ff585137d,"
+        "color.border.input.success": "S:96a1a114f6d0c4817f14d8cc48d67b5ff585137d,",
+        "type.tv.input.text": "S:1bcfe824207d221a3863e549a7b9545fd01a84e4,",
+        "type.tv.input.label": "S:393b4c0d113bb612a25f1cb4d52014ed7b47ad3e,",
+        "type.tv.input.support": "S:2cffdb60f3778b835728ec70a801b6f8c7be20cc,"
       }
     }
   ],
