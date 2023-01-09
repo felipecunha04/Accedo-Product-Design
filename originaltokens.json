@@ -225,6 +225,10 @@
           "error": {
             "value": "{color.fb.error.light}",
             "type": "color"
+          },
+          "success": {
+            "value": "{color.fb.success.medium}",
+            "type": "color"
           }
         },
         "on-inverse": {
@@ -1620,7 +1624,8 @@
         "color.border.input.success": "S:96a1a114f6d0c4817f14d8cc48d67b5ff585137d,",
         "type.tv.input.text": "S:1bcfe824207d221a3863e549a7b9545fd01a84e4,",
         "type.tv.input.label": "S:393b4c0d113bb612a25f1cb4d52014ed7b47ad3e,",
-        "type.tv.input.support": "S:2cffdb60f3778b835728ec70a801b6f8c7be20cc,"
+        "type.tv.input.support": "S:2cffdb60f3778b835728ec70a801b6f8c7be20cc,",
+        "color.text.input.success": "S:a463366458845fb86c73b83a8438dae0bf8747a8,"
       }
     }
   ],
