@@ -211,7 +211,7 @@
         },
         "input": {
           "default": {
-            "value": "{color.neutral.grey-80}",
+            "value": "{color.neutral.grey-60}",
             "type": "color"
           },
           "filled": {
