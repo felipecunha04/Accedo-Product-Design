@@ -1,61 +1,35 @@
 import styled from 'styled-components';
 
 export interface INavigation {
-  variant?: 'image' | 'text' | 'icon';
   position?: 'center' | 'left';
-  status?: 'active' | 'deactivated';
 }
 
-export const Navigation = styled.header<INavigation>`
-  /* border-radius: ${({ theme }) => theme.borderRadius.circle};
-  background: rgba(255, 255, 255, 0.15);
-  font-family: ${({ theme }) => theme.font.family.brand};
-  font-style: normal;
-  font-weight: ${({ theme }) => theme.font.weight.regular};
-  line-height: ${({ theme }) => theme.font.lineHeight.distant};
-  color: ${({ theme }) => theme.pallete.neutral.White}; */
+export const Navigation = styled.header`
   display: flex;
   align-items: center;
+  background-color: ${({ theme }) => theme.pallete.bg.Default};
+  gap: 29px;
+  min-width: max-content;
+
   justify-content: space-between;
-  padding: 30px 10%;
+  padding: ${({ theme }) => `${theme.spacing['md']} ${theme.spacing['lg']}`};
+`;
 
-  ${({ position }) => {
-    switch (position) {
-      case 'left':
-        return `
-          .right-links {
-            margin-left: auto;
-          }
-          justify-content: flex-start;
-       `;
-      default:
-        return `
-          justify-content: space-between;
+export const NavigationLinks = styled.div<INavigation>`
+  display: flex;
+  align-items: center;
+  justify-content: ${({ position }) =>
+    position === 'center' ? 'center' : 'flex-start'};
+  width: 100%;
+  gap: 64px;
+`;
 
-       `;
-    }
-  }};
-  
+export const IconButtonsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+`;
 
-  .logo {
-    cursor: pointer;
-    width: 80px;
-  };
-
-  .nav-links {
-    list-style: none;
-  };
-
-  .middle-links li {
-    display: flex;
-    padding: 0px 20px;
-  };
-
-  .middle-links li a {
-    transition: all 0.3s ease 0s;
-  };
-
-  .middle-links li a:hover {
-    color: #0088a9;
-  };
+export const Logo = styled.img`
+  max-height: 64px;
 `;

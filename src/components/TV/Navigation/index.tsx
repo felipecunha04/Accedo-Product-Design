@@ -1,55 +1,65 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 
 import * as Styles from './styles';
 import { Button } from '../Button';
-import { Avatar } from '../Avatar';
+import { Avatar, AvatarProps } from '../Avatar';
+import { IconButton } from '../IconButton';
 
 export interface NavigationProps extends Styles.INavigation {
-  children: ReactNode | string;
-  NavigationImage: string;
-  status: 'active' | 'deactivated';
-  logo: string;
+  logo?: {
+    src: string;
+    alt: string;
+  };
+  navigationItems: {
+    text: string;
+    action: () => void;
+  }[];
+  iconButtons: {
+    icon: JSX.Element;
+    action: () => void;
+  }[];
+  avatar?: {
+    image?: string;
+    text?: string;
+  } & Pick<AvatarProps, 'variant'>;
 }
 
 export function Navigation({
-  // children,
-  // NavigationImage,
-  status = 'active',
-  variant = 'image',
   position = 'center',
-  logo = '',
+  logo,
+  navigationItems,
+  iconButtons,
+  avatar,
 }: NavigationProps) {
   return (
-    <Styles.Navigation
-      status={status}
-      position={position}
-      variant={variant}
-    >
-      {logo ? (
-        <img className='logo' src={logo} />
-      ) : (
-        <p>Insert Logo Prop</p>
-      )}
-      <nav>
-        <ul className='middle-links'>
-          <li>
-            <Button variant='text'>
-              Button 1
-            </Button>
-            <Button variant='text'>
-              Button 2
-            </Button>
-            <Button variant='text'>
-              Button 3
-            </Button>
-          </li>
-        </ul>
-      </nav>
-      <div className='right-links'>
-        <Avatar variant='text' status='deactivated' size='small'>
-          A
-        </Avatar>
-      </div>
+    <Styles.Navigation>
+      {logo && <Styles.Logo src={logo.src} alt={logo?.alt} />}
+
+      <Styles.NavigationLinks position={position}>
+        {navigationItems.map((item) => (
+          <Button variant="text" onClick={item.action} key={item.text}>
+            {item.text}
+          </Button>
+        ))}
+      </Styles.NavigationLinks>
+
+      <Styles.IconButtonsContainer>
+        {iconButtons.map((button, index) => (
+          <IconButton variant="text" onClick={() => button.action} key={index}>
+            {button.icon}
+          </IconButton>
+        ))}
+        {avatar && (
+          <Avatar
+            variant={avatar.variant}
+            avatarImage={avatar.image}
+            status="deactivated"
+            size="small"
+          >
+            {avatar.text}
+          </Avatar>
+        )}
+      </Styles.IconButtonsContainer>
     </Styles.Navigation>
   );
 }
