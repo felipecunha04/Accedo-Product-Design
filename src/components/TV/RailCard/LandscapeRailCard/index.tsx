@@ -5,7 +5,8 @@ import LandScapeCard from '../../Card/LandScape';
 import Slider from '../../Slider';
 
 interface Card {
-  subtitle: string;
+  title?: string;
+  subtitle?: string;
   imgSrc: string;
 }
 export interface LandscapeRailCardProps extends Styles.ILandscapeRailCard {
