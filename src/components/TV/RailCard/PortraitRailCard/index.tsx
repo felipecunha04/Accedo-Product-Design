@@ -1,41 +1,32 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 
 import * as Styles from './styles';
 import PortraitCard from '../../Card/Portrait';
 import Slider from '../../Slider';
 
-export interface PortraitRailCardProps extends Styles.IPortraitRailCard {
-  children: ReactNode | string;
-  PortraitRailCardImage: string;
-  status: 'active' | 'deactivated';
-  logo: string;
+interface Card {
+  title?: string;
+  imgSrc: string;
 }
 
-const SliderProps = {
-  zoomFactor: 30, // How much the image should zoom on hover in percent
-  slideMargin: 10, // Margin on each side of slides
-  maxVisibleSlides: 5,
-  pageTransition: 500 // Transition when flipping pages
-};
-
-const FakeData = {
-  imgSrc:
-    'https://firebasestorage.googleapis.com/v0/b/accedo-ds.appspot.com/o/black-panther-portrait-2x.png?alt=media',
-};
-
-const PortraitArray = [FakeData, FakeData, FakeData, FakeData, FakeData];
+export interface PortraitRailCardProps extends Styles.IPortraitRailCard {
+  cardsArray: Card[];
+  zoomFactor: number;
+  slideMargin: number;
+  maxVisibleSlides: number;
+  pageTransition: number;
+}
 
 export function PortraitRailCard({
-  // children,
-  // PortraitRailCardImage,
-  // status = 'active',
-  // variant = 'image',
-  // position = 'center',
-  // logo = '',
+  cardsArray,
+  zoomFactor, // How much the image should zoom on hover in percent
+  slideMargin, // Margin on each side of slides
+  maxVisibleSlides,
+  pageTransition // Transition when flipping pages
 }: PortraitRailCardProps) {
   return (
-    <Slider {...SliderProps}>
-      {PortraitArray.map(slide => (
+    <Slider zoomFactor={zoomFactor} slideMargin={slideMargin} maxVisibleSlides={maxVisibleSlides} pageTransition={pageTransition}>
+      {cardsArray.map(slide => (
         <PortraitCard {...slide} />
       ))}
     </Slider>
