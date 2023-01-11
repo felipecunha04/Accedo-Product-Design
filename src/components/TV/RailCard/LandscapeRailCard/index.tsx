@@ -1,44 +1,32 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 
 import * as Styles from './styles';
 import LandScapeCard from '../../Card/LandScape';
 import Slider from '../../Slider';
 
+interface Card {
+  subtitle: string;
+  imgSrc: string;
+}
 export interface LandscapeRailCardProps extends Styles.ILandscapeRailCard {
-  children: ReactNode | string;
-  LandscapeRailCardImage: string;
-  status: 'active' | 'deactivated';
-  logo: string;
+  cardsArray: Card[];
+  zoomFactor: number;
+  slideMargin: number;
+  maxVisibleSlides: number;
+  pageTransition: number;
 }
-
-const FakeData = {
-  subtitle: 'Primary text',
-  progress: 43,
-  imgSrc:
-    'https://firebasestorage.googleapis.com/v0/b/accedo-ds.appspot.com/o/black-panther-landscape.png?alt=media',
-}
-
-const LandscapeArray = [FakeData, FakeData, FakeData, FakeData, FakeData];
-
-const SliderProps = {
-  zoomFactor: 1, // How much the image should zoom on hover in percent
-  slideMargin: 10, // Margin on each side of slides
-  maxVisibleSlides: 5,
-  pageTransition: 500 // Transition when flipping pages
-};
 
 export function LandscapeRailCard({
-  // children,
-  // LandscapeRailCardImage,
-  // status = 'active',
-  // variant = 'image',
-  // position = 'center',
-  // logo = '',
+  cardsArray,
+  zoomFactor, // How much the image should zoom on hover in percent
+  slideMargin, // Margin on each side of slides
+  maxVisibleSlides,
+  pageTransition // Transition when flipping pages
 }: LandscapeRailCardProps) {
   return (
-    <Slider {...SliderProps}
+    <Slider zoomFactor={zoomFactor} slideMargin={slideMargin} maxVisibleSlides={maxVisibleSlides} pageTransition={pageTransition}
     >
-      {LandscapeArray.map(slide => (
+      {cardsArray.map(slide => (
         <LandScapeCard {...slide}>
         </LandScapeCard>
       ))}

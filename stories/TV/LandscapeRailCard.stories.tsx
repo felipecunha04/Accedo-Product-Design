@@ -5,33 +5,50 @@ import { ThemeProvider } from 'styled-components';
 import { LandscapeRailCard, LandscapeRailCardProps } from '../../src/components/TV/RailCard/LandscapeRailCard';
 import { theme } from '../../src/styles/theme';
 
+
+const FakeData = {
+  title: 'Primary text',
+  subtitle: 'Secondary text',
+  imgSrc:
+    'https://firebasestorage.googleapis.com/v0/b/accedo-ds.appspot.com/o/black-panther-landscape.png?alt=media',
+}
+
+const cardsData = [FakeData, FakeData, FakeData, FakeData, FakeData];
+
 const meta: Meta = {
   title: 'TV/RailCard',
   component: LandscapeRailCard,
   argTypes: {
-    variant: {
-      options: ['image', 'text', 'icon'],
-      description: 'Variant type of the Navigation Component',
-      control: { type: 'select' },
-      defaultValue: 'image'
+    zoomFactor: {
+      description: 'Set how much zoom on selection or hover',
+      defaultValue: 1,
+      control: { type: 'number' },
     },
-    status: {
-      options: ['active', 'deactivated'],
-      description: 'The status sets the border as active or not',
-      control: { type: 'select' },
-      defaultValue: 'primary'
+    slideMargin: {
+      description: 'Set the space between cards',
+      defaultValue: 10,
+      control: { type: 'number' },
     },
-    size: {
-      options: ['small', 'medium', 'big'],
-      description: 'Sets the size of the Navigation',
-      control: { type: 'select' },
-      defaultValue: 'medium'
-    }
+    maxVisibleSlides: {
+      description: 'Set how many slides are visible at once',
+      defaultValue: 5,
+      control: { type: 'number' },
+    },
+    pageTransition: {
+      description: 'Set the transition when flipping pages',
+      defaultValue: 500,
+      control: { type: 'number' },
+    },
+    cardsArray: {
+      description: 'Cards for the Rails',
+      control: { type: 'array' },
+      defaultValue: cardsData,
+    },
   },
   parameters: {
     docs: {
       description: {
-        component: 'Navigation component',
+        component: 'Landscape Rail Card component',
       },
     },
   },
@@ -39,12 +56,9 @@ const meta: Meta = {
 
 export default meta;
 
-
 const Template = (args: LandscapeRailCardProps) => (
   <ThemeProvider theme={theme}>
-    <LandscapeRailCard {...args}>
-
-    </LandscapeRailCard>
+    <LandscapeRailCard {...args} />
   </ThemeProvider>
 );
 
