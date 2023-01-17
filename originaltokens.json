@@ -604,6 +604,10 @@
       "avatar": {
         "value": "{border-radius.circle}",
         "type": "borderRadius"
+      },
+      "keyboard": {
+        "value": "{border-radius.small}",
+        "type": "borderRadius"
       }
     },
     "type": {
