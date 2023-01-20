@@ -16,7 +16,7 @@ const FakeData = {
 const cardsData = [FakeData, FakeData, FakeData, FakeData, FakeData];
 
 const meta: Meta = {
-  title: 'TV/RailCard',
+  title: 'TV/Rail Card',
   component: LandscapeRailCard,
   argTypes: {
     zoomFactor: {

@@ -1,25 +1,31 @@
 import styled from 'styled-components';
 
 export interface IDots {
-  active?: number;
+
 }
 
 export const DotList = styled.ul`
   display: inline-block;
   margin: 0;
   padding: 10px 0;
+  margin-top: 5rem;
   list-style-type: none;
+
+  .active-dot {
+    opacity: ${({ theme }) => theme.opacity.full};
+  }
 `;
 
 export const Dots = styled.li<IDots>`
   display: inline-block;
-  width: 4px;
-  max-width: 4px;
-  height: 4px;
-  max-height: 4px;
-  margin-right: 3px;
+  width: 16px;
+  max-width: 16px;
+  height: 16px;
+  max-height: 16px;
+  margin-right: 16px;
   border-radius: 50%;
-  background-color: ${(props) => props.active ? '#e73439' : '#d2d2d2'};
+  background-color: ${({ theme }) => theme.pallete.neutral.White};
+  opacity: ${({ theme }) => theme.opacity.light};
   transition: all 0.25s;
   cursor: pointer;
 
@@ -28,10 +34,10 @@ export const Dots = styled.li<IDots>`
   }
 
   &:hover {
-    width: 5px;
-    max-width: 5px;
-    height: 5px;
-    max-height: 5px;
-    margin-right: 8px;
+    width: 20px;
+    max-width: 18px;
+    height: 18px;
+    max-height: 18px;
+    margin-right: 20px;
   }
 `;

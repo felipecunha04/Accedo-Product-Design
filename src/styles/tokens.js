@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 17 Jan 2023 13:19:52 GMT
+ * Generated on Thu, 19 Jan 2023 11:49:55 GMT
  */
 
 export const ColorOvGradientDefault = "#000000";
@@ -127,6 +127,7 @@ export const BorderRadiusButton = 1000;
 export const BorderRadiusCard = 8;
 export const BorderRadiusInput = 4;
 export const BorderRadiusAvatar = 1000;
+export const BorderRadiusKeyboard = 4;
 export const TypeWebHeadingH1 = {"fontFamily":"Metropolis","fontWeight":"Regular","lineHeight":"180%","fontSize":51,"letterSpacing":"0%","paragraphSpacing":0,"textDecoration":"none","textCase":"none"};
 export const TypeWebHeadingH2 = {"fontFamily":"Metropolis","fontWeight":"Regular","lineHeight":"150%","fontSize":40,"letterSpacing":"0%","paragraphSpacing":0,"textDecoration":"none","textCase":"none"};
 export const TypeWebHeadingH3 = {"fontFamily":"Metropolis","fontWeight":"Bold","lineHeight":"150%","fontSize":32,"letterSpacing":"0%","paragraphSpacing":0,"textDecoration":"none","textCase":"none"};

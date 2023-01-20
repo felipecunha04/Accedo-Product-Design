@@ -13,7 +13,7 @@ const Dots = React.memo<DotsProps>(({ items, active, onClick }) => {
       {Array.from(Array(items).keys()).map((dot: number) => (
         <Styles.Dots
           key={dot}
-          active={active}
+          className={active === dot ? 'active-dot' : ''}
           onClick={() => onClick(dot)}
         />
       ))}

@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Tue, 17 Jan 2023 13:19:53 GMT
+// Generated on Thu, 19 Jan 2023 11:49:55 GMT
 
 
 import UIKit
@@ -15,6 +15,7 @@ public class StyleDictionaryClass {
     public static let borderRadiusCard = 8
     public static let borderRadiusCircle = 1000
     public static let borderRadiusInput = 4
+    public static let borderRadiusKeyboard = 4
     public static let borderRadiusLarge = 16
     public static let borderRadiusMedium = 8
     public static let borderRadiusNone = none

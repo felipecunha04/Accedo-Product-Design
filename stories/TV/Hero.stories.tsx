@@ -3,6 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
 
 import { Hero, HeroProps } from '../../src/components/TV/Hero';
+import { IconButton } from '../../src/components/TV/IconButton'; 
 import { theme } from '../../src/styles/theme';
 
 const PlusIcon = (
@@ -38,6 +39,21 @@ const meta: Meta = {
   title: 'TV/Hero',
   component: Hero,
   argTypes: {
+    title: {
+      description: 'Content title',
+      control: { type: 'text' },
+      defaultValue: 'Content Title',
+    },
+    subtitle: {
+      description: 'Content subtitle',
+      control: { type: 'text' },
+      defaultValue: 'Content Subtitle',
+    },
+    slideDelay: {
+      description: 'Time for the slides do auto scroll. Use the number 0 for them to stay still',
+      control: { type: 'number' },
+      defaultValue: 2000,
+    },
     slides: {
       description: 'Images for the Slider',
       control: { type: 'array' },
@@ -57,7 +73,14 @@ export default meta;
 
 const Default = (args: HeroProps) => (
   <ThemeProvider theme={theme}>
-    <Hero {...args} />
+    <Hero {...args}>
+      <IconButton >
+        {PlusIcon} First Button
+      </IconButton>
+      <IconButton>
+        {PlusIcon} Second Button
+      </IconButton>
+    </Hero>
   </ThemeProvider>
 );
 

@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Tue, 17 Jan 2023 13:19:53 GMT
+// Generated on Thu, 19 Jan 2023 11:49:55 GMT
 
 
 import UIKit
@@ -15,6 +15,7 @@ internal struct StyleDictionaryStruct {
     internal static let borderRadiusCard = 8
     internal static let borderRadiusCircle = 1000
     internal static let borderRadiusInput = 4
+    internal static let borderRadiusKeyboard = 4
     internal static let borderRadiusLarge = 16
     internal static let borderRadiusMedium = 8
     internal static let borderRadiusNone = none
