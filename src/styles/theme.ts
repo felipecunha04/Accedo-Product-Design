@@ -1,7 +1,8 @@
 import { DefaultTheme } from 'styled-components';
 import '@fontsource/metropolis';
 
-const Token = require('./tokens.js');
+// @ts-ignore
+import * as Token from './tokens';
 
 const font = {
   family: {

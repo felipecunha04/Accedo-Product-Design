@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
-
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../../../styles/theme';
 import * as Styles from './styles';
 
 export interface IconButtonProps extends Styles.IButton {
@@ -12,8 +13,10 @@ export function IconButton({
   ...props
 }: IconButtonProps) {
   return (
-    <Styles.Button variant={variant} {...props}>
-      {children}
-    </Styles.Button>
+    <ThemeProvider theme={theme}>
+      <Styles.Button variant={variant} {...props}>
+        {children}
+      </Styles.Button>
+    </ThemeProvider>
   );
 }

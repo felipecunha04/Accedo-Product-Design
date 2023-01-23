@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../../../styles/theme';
 import * as Styles from './styles';
 import {LandScapeCard} from '../../Card/LandScape';
 import Slider from '../../Slider';
@@ -25,12 +26,14 @@ export function LandscapeRailCard({
   pageTransition // Transition when flipping pages
 }: LandscapeRailCardProps) {
   return (
-    <Slider zoomFactor={zoomFactor} slideMargin={slideMargin} maxVisibleSlides={maxVisibleSlides} pageTransition={pageTransition}
-    >
-      {cardsArray.map(slide => (
-        <LandScapeCard {...slide}>
-        </LandScapeCard>
-      ))}
-    </Slider>
+    <ThemeProvider theme={theme}>
+      <Slider zoomFactor={zoomFactor} slideMargin={slideMargin} maxVisibleSlides={maxVisibleSlides} pageTransition={pageTransition}
+      >
+        {cardsArray.map(slide => (
+          <LandScapeCard {...slide}>
+          </LandScapeCard>
+        ))}
+      </Slider>
+    </ThemeProvider>
   );
 }

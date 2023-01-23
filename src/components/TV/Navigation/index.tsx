@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../../../styles/theme';
 import * as Styles from './styles';
 import { Button } from '../Button';
 import { Avatar, AvatarProps } from '../Avatar';
@@ -32,34 +33,36 @@ export function Navigation({
   avatar,
 }: NavigationProps) {
   return (
-    <Styles.Navigation>
-      {logo && <Styles.Logo src={logo.src} alt={logo?.alt} />}
+    <ThemeProvider theme={theme}>
+      <Styles.Navigation>
+        {logo && <Styles.Logo src={logo.src} alt={logo?.alt} />}
 
-      <Styles.NavigationLinks position={position}>
-        {navigationItems.map((item) => (
-          <Button variant="text" onClick={item.action} key={item.text}>
-            {item.text}
-          </Button>
-        ))}
-      </Styles.NavigationLinks>
+        <Styles.NavigationLinks position={position}>
+          {navigationItems.map((item) => (
+            <Button variant="text" onClick={item.action} key={item.text}>
+              {item.text}
+            </Button>
+          ))}
+        </Styles.NavigationLinks>
 
-      <Styles.IconButtonsContainer>
-        {iconButtons.map((button, index) => (
-          <IconButton variant="text" onClick={() => button.action} key={index}>
-            {button.icon}
-          </IconButton>
-        ))}
-        {avatar && (
-          <Avatar
-            variant={avatar.variant}
-            avatarImage={avatar.image}
-            status="deactivated"
-            size="small"
-          >
-            {avatar.text}
-          </Avatar>
-        )}
-      </Styles.IconButtonsContainer>
-    </Styles.Navigation>
+        <Styles.IconButtonsContainer>
+          {iconButtons.map((button, index) => (
+            <IconButton variant="text" onClick={() => button.action} key={index}>
+              {button.icon}
+            </IconButton>
+          ))}
+          {avatar && (
+            <Avatar
+              variant={avatar.variant}
+              avatarImage={avatar.image}
+              status="deactivated"
+              size="small"
+            >
+              {avatar.text}
+            </Avatar>
+          )}
+        </Styles.IconButtonsContainer>
+      </Styles.Navigation>
+    </ThemeProvider>
   );
 }

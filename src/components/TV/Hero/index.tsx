@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Dots from '../Dots';
-
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../../../styles/theme';
 import * as Styles from './styles';
 
 interface Slides {
@@ -58,7 +59,7 @@ export function Hero({
   }, [start]);
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Styles.Hero>
         <Styles.HeroList>
           {visibleItems.map((slide: any) =>
@@ -98,6 +99,6 @@ export function Hero({
           </Styles.HeroDotControls>
         )}
       </Styles.HeroContent>
-    </>
+    </ThemeProvider>
   );
 }

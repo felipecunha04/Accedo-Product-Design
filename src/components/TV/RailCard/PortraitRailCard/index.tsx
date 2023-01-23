@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../../../styles/theme';
 import * as Styles from './styles';
 import {PortraitCard} from '../../Card/Portrait';
 import Slider from '../../Slider';
@@ -25,10 +26,12 @@ export function PortraitRailCard({
   pageTransition // Transition when flipping pages
 }: PortraitRailCardProps) {
   return (
-    <Slider zoomFactor={zoomFactor} slideMargin={slideMargin} maxVisibleSlides={maxVisibleSlides} pageTransition={pageTransition}>
-      {cardsArray.map(slide => (
-        <PortraitCard {...slide} />
-      ))}
-    </Slider>
+    <ThemeProvider theme={theme}>
+      <Slider zoomFactor={zoomFactor} slideMargin={slideMargin} maxVisibleSlides={maxVisibleSlides} pageTransition={pageTransition}>
+        {cardsArray.map(slide => (
+          <PortraitCard {...slide} />
+        ))}
+      </Slider>
+    </ThemeProvider>
   );
 }

@@ -1,4 +1,6 @@
 import React, { ReactNode } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../../../styles/theme';
 
 import * as Styles from './styles';
 
@@ -16,12 +18,14 @@ export function Button({
   ...props
 }: ButtonProps) {
   return (
-    <Styles.Button variant={variant} {...props}>
-      {leftIcon && leftIcon}
+    <ThemeProvider theme={theme}>
+      <Styles.Button variant={variant} {...props}>
+        {leftIcon && leftIcon}
 
-      {children}
+        {children}
 
-      {rightIcon && rightIcon}
-    </Styles.Button>
+        {rightIcon && rightIcon}
+      </Styles.Button>
+    </ThemeProvider>
   );
 }
