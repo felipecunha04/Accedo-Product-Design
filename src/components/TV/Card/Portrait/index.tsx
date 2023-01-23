@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '../../../styles/theme';
+import { theme } from '../../../../styles/theme';
 import * as Styles from './styles';
 
 export interface PortraitCardProps extends Styles.ICard {
