@@ -2,8 +2,8 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
 
-import PortraitCard, {
-  PortraitCardProps,
+import {
+  PortraitCard, PortraitCardProps,
 } from '../../src/components/TV/Card/Portrait';
 import { theme } from '../../src/styles/theme';
 

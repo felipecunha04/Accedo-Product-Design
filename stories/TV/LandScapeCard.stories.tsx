@@ -2,8 +2,8 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
 
-import LandScapeCard, {
-  LandScapeCardProps,
+import {
+  LandScapeCard, LandScapeCardProps,
 } from '../../src/components/TV/Card/LandScape';
 import { theme } from '../../src/styles/theme';
 

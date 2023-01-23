@@ -7,7 +7,7 @@ export interface LandScapeCardProps extends Styles.ICard {
   subtitle?: string;
 }
 
-function LandScapeCard({
+export function LandScapeCard({
   imgSrc,
   title,
   subtitle,
@@ -25,5 +25,3 @@ function LandScapeCard({
     </Styles.Card>
   );
 }
-
-export default LandScapeCard;

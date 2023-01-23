@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as Styles from './styles';
-import LandScapeCard from '../../Card/LandScape';
+import {LandScapeCard} from '../../Card/LandScape';
 import Slider from '../../Slider';
 
 interface Card {

@@ -6,7 +6,7 @@ export interface PortraitCardProps extends Styles.ICard {
   title?: string;
 }
 
-function PortraitCard({ imgSrc, title, ...props }: PortraitCardProps) {
+export function PortraitCard({ imgSrc, title, ...props }: PortraitCardProps) {
   return (
     <Styles.Card {...props}>
       <Styles.ImageContainer imgSrc={imgSrc} />
@@ -14,5 +14,3 @@ function PortraitCard({ imgSrc, title, ...props }: PortraitCardProps) {
     </Styles.Card>
   );
 }
-
-export default PortraitCard;
