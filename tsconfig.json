@@ -5,7 +5,7 @@
     "module": "esnext",
     "lib": ["dom", "esnext", "es2017", "DOM"],
     "importHelpers": true,
-    "types": ["resize-observer-browser"],
+    "types": ["resize-observer-browser", "node"],
     // output .d.ts declaration files for consumers
     "declaration": true,
     // output .js.map sourcemap files for consumers
