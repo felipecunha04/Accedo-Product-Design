@@ -10,6 +10,8 @@ export const HeroList = styled.ul`
   display: flex;
   padding: 0;
   list-style-type: none;
+  margin-top: 0;
+  background: linear-gradient(90deg, #090D11 0%, #090D1180 35.5%, #090D1100 89.25%), linear-gradient(180deg, #090D1100 0%, #090D11b3 64.06%, #090D11 88.54%);
 
   & > * {
     margin-right: 32px;
@@ -27,6 +29,7 @@ export const HeroDotControls = styled.div`
 export const HeroImg = styled.img`
   min-width: 100vw;
   max-height: 100vh;
+  opacity: .5;
 `;
 
 export const HeroContent = styled.div`
