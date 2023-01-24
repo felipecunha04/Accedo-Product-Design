@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export interface IImage extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  image?: 'text';
+}
+
 export const Hero = styled.div`
   display: flex;
   justify-content: center;
@@ -26,10 +30,14 @@ export const HeroDotControls = styled.div`
   text-align: left;
 `;
 
-export const HeroImg = styled.img`
-  min-width: 100vw;
-  max-height: 100vh;
+export const HeroImg = styled.div<IImage>`
+  width: 100vw;
+  height: 100vh;
+  background-image: url(${props => props.image});
   opacity: .5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 `;
 
 export const HeroContent = styled.div`

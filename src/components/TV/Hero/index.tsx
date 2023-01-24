@@ -65,8 +65,7 @@ export function Hero({
           {visibleItems.map((slide: any) =>
             <Styles.HeroImg
               id={slide.id}
-              src={slide.image}
-              alt={`image-${slide.id}`}
+              image={slide.image}
             />
           )}
         </Styles.HeroList>
