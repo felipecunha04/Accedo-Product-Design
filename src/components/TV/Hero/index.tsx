@@ -89,7 +89,7 @@ export function Hero({
           {children}
         </Styles.ButtonContainer>
 
-        {showDots || isControlsVisible && (
+        {showDots && (
           <Styles.HeroDotControls>
             <Dots
               items={slides.length}
