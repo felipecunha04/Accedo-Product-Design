@@ -2976,8 +2976,7 @@
       "id": "fa073f8553491c9ed41c165c456d30320ffe2194",
       "name": "main",
       "selectedTokenSets": {
-        "BUDS": "enabled",
-        "demo_changes": "disabled"
+        "BUDS": "enabled"
       },
       "$figmaStyleReferences": {
         "type.web.heading.h1": "S:b2bed633b78a54e9a55aa4c99ae3e4477438dfb5,",
