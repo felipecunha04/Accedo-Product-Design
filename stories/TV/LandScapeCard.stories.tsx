@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 
 import {
   LandScapeCard, LandScapeCardProps,
-} from '../../src/components/TV/Card/LandScape';
+} from '../../src/components/TV/Card/LandscapeCard';
 import { theme } from '../../src/styles/theme';
 
 const meta: Meta = {

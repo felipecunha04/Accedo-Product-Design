@@ -1,6 +1,6 @@
 export {Button} from './components/TV/Button';
 export {Avatar} from './components/TV/Avatar';
-export {LandScapeCard} from './components/TV/Card/LandScape';
+export {LandScapeCard} from './components/TV/Card/LandscapeCard';
 export {PortraitCard} from './components/TV/Card/Portrait';
 export {Hero} from './components/TV/Hero';
 export {IconButton} from './components/TV/IconButton';

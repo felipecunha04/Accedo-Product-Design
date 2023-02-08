@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../../../styles/theme';
 import * as Styles from './styles';
-import {LandScapeCard} from '../../Card/LandScape';
+import {LandScapeCard} from '../../Card/LandscapeCard';
 import Slider from '../../Slider';
 
 interface Card {
