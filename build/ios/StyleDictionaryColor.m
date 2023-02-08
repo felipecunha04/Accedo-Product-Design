@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Tue, 24 Jan 2023 14:33:10 GMT
+// Generated on Fri, 03 Feb 2023 16:03:36 GMT
 
 
 #import "StyleDictionaryColor.h"
@@ -24,11 +24,11 @@
 [UIColor colorWithRed:0.000f green:0.000f blue:0.000f alpha:1.000f],
 [UIColor colorWithRed:0.000f green:0.000f blue:0.000f alpha:1.000f],
 [UIColor colorWithRed:0.000f green:0.000f blue:0.000f alpha:1.000f],
-[UIColor colorWithRed:0.020f green:0.106f blue:0.180f alpha:1.000f],
-[UIColor colorWithRed:0.039f green:0.424f blue:0.761f alpha:1.000f],
-[UIColor colorWithRed:0.235f green:0.573f blue:0.867f alpha:1.000f],
-[UIColor colorWithRed:0.459f green:0.718f blue:0.941f alpha:1.000f],
-[UIColor colorWithRed:0.820f green:0.906f blue:0.980f alpha:1.000f],
+[UIColor colorWithRed:0.075f green:0.224f blue:0.149f alpha:1.000f],
+[UIColor colorWithRed:0.149f green:0.455f blue:0.235f alpha:1.000f],
+[UIColor colorWithRed:0.251f green:0.749f blue:0.498f alpha:1.000f],
+[UIColor colorWithRed:0.549f green:0.851f blue:0.698f alpha:1.000f],
+[UIColor colorWithRed:0.847f green:0.949f blue:0.898f alpha:1.000f],
 [UIColor colorWithRed:0.071f green:0.106f blue:0.129f alpha:1.000f],
 [UIColor colorWithRed:0.106f green:0.157f blue:0.196f alpha:1.000f],
 [UIColor colorWithRed:0.035f green:0.051f blue:0.067f alpha:1.000f],
@@ -58,33 +58,33 @@
 [UIColor colorWithRed:0.106f green:0.157f blue:0.196f alpha:1.000f],
 [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f],
 [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:0.145f],
-[UIColor colorWithRed:0.235f green:0.573f blue:0.867f alpha:1.000f],
+[UIColor colorWithRed:0.251f green:0.749f blue:0.498f alpha:1.000f],
 [UIColor colorWithRed:0.271f green:0.302f blue:0.329f alpha:1.000f],
 [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f],
 [UIColor colorWithRed:0.780f green:0.804f blue:0.820f alpha:1.000f],
-[UIColor colorWithRed:0.235f green:0.573f blue:0.867f alpha:1.000f],
+[UIColor colorWithRed:0.251f green:0.749f blue:0.498f alpha:1.000f],
 [UIColor colorWithRed:0.271f green:0.302f blue:0.329f alpha:1.000f],
 [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f],
 [UIColor colorWithRed:0.573f green:0.600f blue:0.627f alpha:1.000f],
 [UIColor colorWithRed:0.573f green:0.600f blue:0.627f alpha:1.000f],
 [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f],
-[UIColor colorWithRed:0.459f green:0.718f blue:0.941f alpha:1.000f],
+[UIColor colorWithRed:0.549f green:0.851f blue:0.698f alpha:1.000f],
 [UIColor colorWithRed:0.878f green:0.569f blue:0.522f alpha:1.000f],
 [UIColor colorWithRed:0.251f green:0.749f blue:0.498f alpha:1.000f],
 [UIColor colorWithRed:0.090f green:0.102f blue:0.110f alpha:1.000f],
 [UIColor colorWithRed:0.271f green:0.302f blue:0.329f alpha:1.000f],
 [UIColor colorWithRed:0.780f green:0.804f blue:0.820f alpha:1.000f],
-[UIColor colorWithRed:0.235f green:0.573f blue:0.867f alpha:1.000f],
+[UIColor colorWithRed:0.251f green:0.749f blue:0.498f alpha:1.000f],
 [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f],
-[UIColor colorWithRed:0.020f green:0.106f blue:0.180f alpha:1.000f],
+[UIColor colorWithRed:0.075f green:0.224f blue:0.149f alpha:1.000f],
 [UIColor colorWithRed:0.271f green:0.302f blue:0.329f alpha:1.000f],
 [UIColor colorWithRed:0.573f green:0.600f blue:0.627f alpha:1.000f],
-[UIColor colorWithRed:0.459f green:0.718f blue:0.941f alpha:1.000f],
+[UIColor colorWithRed:0.549f green:0.851f blue:0.698f alpha:1.000f],
 [UIColor colorWithRed:0.878f green:0.569f blue:0.522f alpha:1.000f],
 [UIColor colorWithRed:0.251f green:0.749f blue:0.498f alpha:1.000f],
-[UIColor colorWithRed:0.235f green:0.573f blue:0.867f alpha:1.000f],
-[UIColor colorWithRed:0.039f green:0.424f blue:0.761f alpha:1.000f],
-[UIColor colorWithRed:0.020f green:0.106f blue:0.180f alpha:1.000f],
+[UIColor colorWithRed:0.251f green:0.749f blue:0.498f alpha:1.000f],
+[UIColor colorWithRed:0.149f green:0.455f blue:0.235f alpha:1.000f],
+[UIColor colorWithRed:0.075f green:0.224f blue:0.149f alpha:1.000f],
 [UIColor colorWithRed:0.271f green:0.302f blue:0.329f alpha:1.000f]
     ];
   });

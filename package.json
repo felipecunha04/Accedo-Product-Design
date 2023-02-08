@@ -1,5 +1,5 @@
 {
-  "version": "0.2.7",
+  "version": "0.2.9",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -24,7 +24,8 @@
     "token-translate": "node build.js",
     "token-transform": "npx token-transformer ./originaltokens.json ./tokens/tokens.json",
     "dev": "npm run token-transform && npm run token-translate && concurrently --kill-others \"npm run start\" \"npm run storybook\"",
-    "deploy-storybook": "npm run token-transform && npm run token-translate && build-storybook"
+    "deploy-storybook": "npm run token-transform && npm run token-translate && build-storybook",
+    "new-version": "npm run token-transform && npm run token-translate && npm publish"
   },
   "peerDependencies": {
     "react": ">=16"

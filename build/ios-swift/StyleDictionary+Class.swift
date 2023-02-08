@@ -4,14 +4,14 @@
 //
 
 // Do not edit directly
-// Generated on Tue, 24 Jan 2023 14:33:10 GMT
+// Generated on Fri, 03 Feb 2023 16:03:36 GMT
 
 
 import UIKit
 
 public class StyleDictionaryClass {
     public static let borderRadiusAvatar = 1000
-    public static let borderRadiusButton = 1000
+    public static let borderRadiusButton = 8
     public static let borderRadiusCard = 8
     public static let borderRadiusCircle = 1000
     public static let borderRadiusInput = 4
@@ -29,25 +29,25 @@ public class StyleDictionaryClass {
     public static let borderWidthTvAvatar = 4
     public static let borderWidthTvCard = 4
     public static let borderWidthTvInput = 2
-    public static let colorAccentDefault = UIColor(red: 0.235, green: 0.573, blue: 0.867, alpha: 1)
+    public static let colorAccentDefault = UIColor(red: 0.251, green: 0.749, blue: 0.498, alpha: 1)
     public static let colorAccentDisabled = UIColor(red: 0.271, green: 0.302, blue: 0.329, alpha: 1)
-    public static let colorAccentEmphasis = UIColor(red: 0.039, green: 0.424, blue: 0.761, alpha: 1)
-    public static let colorAccentSubtle = UIColor(red: 0.020, green: 0.106, blue: 0.180, alpha: 1)
+    public static let colorAccentEmphasis = UIColor(red: 0.149, green: 0.455, blue: 0.235, alpha: 1)
+    public static let colorAccentSubtle = UIColor(red: 0.075, green: 0.224, blue: 0.149, alpha: 1)
     public static let colorBgAlt = UIColor(red: 0.071, green: 0.106, blue: 0.129, alpha: 1)
     public static let colorBgDefault = UIColor(red: 0.035, green: 0.051, blue: 0.067, alpha: 1)
     public static let colorBgEmphasis = UIColor(red: 0.106, green: 0.157, blue: 0.196, alpha: 1)
     public static let colorBgInverse = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
     public static let colorBgTvButtonDisabled = UIColor(red: 0.271, green: 0.302, blue: 0.329, alpha: 1)
     public static let colorBgTvButtonEnabled = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 0.1450980392156863)
-    public static let colorBgTvButtonFocus = UIColor(red: 0.235, green: 0.573, blue: 0.867, alpha: 1)
+    public static let colorBgTvButtonFocus = UIColor(red: 0.251, green: 0.749, blue: 0.498, alpha: 1)
     public static let colorBorderAlt = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
-    public static let colorBorderDefault = UIColor(red: 0.235, green: 0.573, blue: 0.867, alpha: 1)
+    public static let colorBorderDefault = UIColor(red: 0.251, green: 0.749, blue: 0.498, alpha: 1)
     public static let colorBorderDisabled = UIColor(red: 0.271, green: 0.302, blue: 0.329, alpha: 1)
     public static let colorBorderInputDefault = UIColor(red: 0.573, green: 0.600, blue: 0.627, alpha: 1)
-    public static let colorBorderInputEmphasis = UIColor(red: 0.459, green: 0.718, blue: 0.941, alpha: 1)
+    public static let colorBorderInputEmphasis = UIColor(red: 0.549, green: 0.851, blue: 0.698, alpha: 1)
     public static let colorBorderInputError = UIColor(red: 0.878, green: 0.569, blue: 0.522, alpha: 1)
     public static let colorBorderInputSuccess = UIColor(red: 0.251, green: 0.749, blue: 0.498, alpha: 1)
-    public static let colorBorderSubtle = UIColor(red: 0.020, green: 0.106, blue: 0.180, alpha: 1)
+    public static let colorBorderSubtle = UIColor(red: 0.075, green: 0.224, blue: 0.149, alpha: 1)
     public static let colorDuskyDark = UIColor(red: 0.071, green: 0.106, blue: 0.129, alpha: 1)
     public static let colorDuskyDarkest = UIColor(red: 0.035, green: 0.051, blue: 0.067, alpha: 1)
     public static let colorDuskyMedium = UIColor(red: 0.106, green: 0.157, blue: 0.196, alpha: 1)
@@ -75,16 +75,16 @@ public class StyleDictionaryClass {
     public static let colorOvGradientDefault = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 1)
     public static let colorOvGradientHeroBanner = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 1)
     public static let colorOvGradientPlayer = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 1)
-    public static let colorPrimaryDark = UIColor(red: 0.039, green: 0.424, blue: 0.761, alpha: 1)
-    public static let colorPrimaryDarkest = UIColor(red: 0.020, green: 0.106, blue: 0.180, alpha: 1)
-    public static let colorPrimaryLight = UIColor(red: 0.459, green: 0.718, blue: 0.941, alpha: 1)
-    public static let colorPrimaryLightest = UIColor(red: 0.820, green: 0.906, blue: 0.980, alpha: 1)
-    public static let colorPrimaryMedium = UIColor(red: 0.235, green: 0.573, blue: 0.867, alpha: 1)
-    public static let colorTextBrand = UIColor(red: 0.235, green: 0.573, blue: 0.867, alpha: 1)
+    public static let colorPrimaryDark = UIColor(red: 0.149, green: 0.455, blue: 0.235, alpha: 1)
+    public static let colorPrimaryDarkest = UIColor(red: 0.075, green: 0.224, blue: 0.149, alpha: 1)
+    public static let colorPrimaryLight = UIColor(red: 0.549, green: 0.851, blue: 0.698, alpha: 1)
+    public static let colorPrimaryLightest = UIColor(red: 0.847, green: 0.949, blue: 0.898, alpha: 1)
+    public static let colorPrimaryMedium = UIColor(red: 0.251, green: 0.749, blue: 0.498, alpha: 1)
+    public static let colorTextBrand = UIColor(red: 0.251, green: 0.749, blue: 0.498, alpha: 1)
     public static let colorTextDefault = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
     public static let colorTextDisabled = UIColor(red: 0.271, green: 0.302, blue: 0.329, alpha: 1)
     public static let colorTextInputDefault = UIColor(red: 0.573, green: 0.600, blue: 0.627, alpha: 1)
-    public static let colorTextInputEmphasis = UIColor(red: 0.459, green: 0.718, blue: 0.941, alpha: 1)
+    public static let colorTextInputEmphasis = UIColor(red: 0.549, green: 0.851, blue: 0.698, alpha: 1)
     public static let colorTextInputError = UIColor(red: 0.878, green: 0.569, blue: 0.522, alpha: 1)
     public static let colorTextInputFilled = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
     public static let colorTextInputSuccess = UIColor(red: 0.251, green: 0.749, blue: 0.498, alpha: 1)
@@ -95,7 +95,7 @@ public class StyleDictionaryClass {
     public static let colorTextOnInverseSubtle = UIColor(red: 0.271, green: 0.302, blue: 0.329, alpha: 1)
     public static let colorTextSubtle = UIColor(red: 0.780, green: 0.804, blue: 0.820, alpha: 1)
     public static let fontFamilyAndroid = "Roboto"
-    public static let fontFamilyBrand = "Metropolis"
+    public static let fontFamilyBrand = "Inknut Antiqua"
     public static let fontFamilyIos = "SF Pro"
     public static let fontLineHeightDistant = "180%"
     public static let fontLineHeightRegular = "150%"
@@ -156,6 +156,7 @@ public class StyleDictionaryClass {
     public static let textCaseNone = none
     public static let textDecorationNone = none
     public static let tokenSetOrder0 = BUDS
+    public static let tokenSetOrder1 = demo_changes
     public static let typeAndroidBodyMedium = [object Object]
     public static let typeAndroidBodySmall = [object Object]
     public static let typeAndroidButtonMedium = [object Object]

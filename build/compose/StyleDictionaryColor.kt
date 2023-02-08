@@ -1,7 +1,7 @@
 
 
 // Do not edit directly
-// Generated on Tue, 24 Jan 2023 14:33:10 GMT
+// Generated on Fri, 03 Feb 2023 16:03:36 GMT
 
 
 
@@ -12,25 +12,25 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.*
 
 object StyleDictionaryColor {
-  val colorAccentDefault = Color(0xff3c92dd)
+  val colorAccentDefault = Color(0xff40bf7f)
   val colorAccentDisabled = Color(0xff454d54)
-  val colorAccentEmphasis = Color(0xff0a6cc2)
-  val colorAccentSubtle = Color(0xff051b2e)
+  val colorAccentEmphasis = Color(0xff26743c)
+  val colorAccentSubtle = Color(0xff133926)
   val colorBgAlt = Color(0xff121b21)
   val colorBgDefault = Color(0xff090d11)
   val colorBgEmphasis = Color(0xff1b2832)
   val colorBgInverse = Color(0xffffffff)
   val colorBgTvButtonDisabled = Color(0xff454d54)
   val colorBgTvButtonEnabled = Color(0x25ffffff)
-  val colorBgTvButtonFocus = Color(0xff3c92dd)
+  val colorBgTvButtonFocus = Color(0xff40bf7f)
   val colorBorderAlt = Color(0xffffffff)
-  val colorBorderDefault = Color(0xff3c92dd)
+  val colorBorderDefault = Color(0xff40bf7f)
   val colorBorderDisabled = Color(0xff454d54)
   val colorBorderInputDefault = Color(0xff9299a0)
-  val colorBorderInputEmphasis = Color(0xff75b7f0)
+  val colorBorderInputEmphasis = Color(0xff8cd9b2)
   val colorBorderInputError = Color(0xffe09185)
   val colorBorderInputSuccess = Color(0xff40bf7f)
-  val colorBorderSubtle = Color(0xff051b2e)
+  val colorBorderSubtle = Color(0xff133926)
   val colorDuskyDark = Color(0xff121b21)
   val colorDuskyDarkest = Color(0xff090d11)
   val colorDuskyMedium = Color(0xff1b2832)
@@ -58,16 +58,16 @@ object StyleDictionaryColor {
   val colorOvGradientDefault = Color(0xff000000)
   val colorOvGradientHeroBanner = Color(0xff000000)
   val colorOvGradientPlayer = Color(0xff000000)
-  val colorPrimaryDark = Color(0xff0a6cc2)
-  val colorPrimaryDarkest = Color(0xff051b2e)
-  val colorPrimaryLight = Color(0xff75b7f0)
-  val colorPrimaryLightest = Color(0xffd1e7fa)
-  val colorPrimaryMedium = Color(0xff3c92dd)
-  val colorTextBrand = Color(0xff3c92dd)
+  val colorPrimaryDark = Color(0xff26743c)
+  val colorPrimaryDarkest = Color(0xff133926)
+  val colorPrimaryLight = Color(0xff8cd9b2)
+  val colorPrimaryLightest = Color(0xffd8f2e5)
+  val colorPrimaryMedium = Color(0xff40bf7f)
+  val colorTextBrand = Color(0xff40bf7f)
   val colorTextDefault = Color(0xffffffff)
   val colorTextDisabled = Color(0xff454d54)
   val colorTextInputDefault = Color(0xff9299a0)
-  val colorTextInputEmphasis = Color(0xff75b7f0)
+  val colorTextInputEmphasis = Color(0xff8cd9b2)
   val colorTextInputError = Color(0xffe09185)
   val colorTextInputFilled = Color(0xffffffff)
   val colorTextInputSuccess = Color(0xff40bf7f)
